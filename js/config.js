@@ -4,12 +4,12 @@ var respecConfig = {
   //voor specType mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specType
   specType: "ST",
   
-  pubDomain: "dk",
-  shortName: "restapi",
+  pubDomain: "api",
+  shortName: "beheermod",
 
 
   publishVersion: "1.0",
-  previousPublishVersion: "1.0-candidate", 
+  previousPublishVersion: "", 
 
   addSectionLinks: true,
 
