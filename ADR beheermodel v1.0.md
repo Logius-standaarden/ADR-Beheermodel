@@ -186,17 +186,17 @@ Hoe API&#39;s daadwerkelijk dienen te functioneren en welke generieke, specifiek
 
 Een lijst van API&#39;s die in ontwikkeling zijn is te vinden op [VNG Realisatie (github.com)](https://github.com/VNG-Realisatie) Ook is er een belangrijk initiatief vanuit VNG Realisatie wat een drijvende kracht is achter de gezamenlijke ontwikkeling van standaard API&#39;s genaamd [Common Ground](https://commonground.nl/). Vanuit dit initiatief zijn standaard API voorzieningen ontwikkeld zoals een [Developer portaal voor de overheid](https://developer.overheid.nl/) en het [API Test Platform (api-test.nl)](https://api-test.nl/)
 
-### Rechtenbeleid  
+## Rechtenbeleid  
 
 De ADR Standaard zelf en dit beheermodel vallen onder de Creative Commons licentie ([Creative Commons Attribution 4.0 License](https://creativecommons.org/licenses/by/4.0/)) Dit houdt in dat het is toegestaan om deze documenten te gebruiken, verder te verspreiden en aan te passen. Dit werk en de specificaties van de ADR-standaard worden royaltee-free ter beschikking gesteld. Organisaties en personen die bijdragen aan de ADR dienen dit onder dezelfde voorwaarden te doen als bij het originele werk. Door bij te dragen aan de ADR verklaren zij hiermee in te stemmen.
 
 Uitgesloten van alle bovenstaande zijn rechten verbonden aan de standaarden, profielen en andere onderdelen waar de ADR gebruik van maakt. Hierop zijn de rechten van de betreffende standaarden, profielen en andere onderdelen zelf van toepassing. Dit zijn in geval van de ADR allemaal open standaarden.
 
-### Kwaliteitsbeleid en benchmarking  
+## Kwaliteitsbeleid en benchmarking  
 
 Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook 1.3 en 2.2.) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.
 
-### Adoptie en erkenning  
+## Adoptie en erkenning  
 
 De ADR-standaard heeft de &#39;pas toe of leg uit&#39; -status van Forum Standaardisatie. Dit betekent kort gezegd dat Nederlandse overheidspartijen en partijen uit de (semi) publieke sector deze standaard dienen toe te passen op het moment dat zij hun informatie met behulp van (REST) API&#39;s willen ontsluiten. Zie hoofdstuk 1 voor meer informatie.
 
