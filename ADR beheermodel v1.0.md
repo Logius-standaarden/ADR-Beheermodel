@@ -1,4 +1,4 @@
-# 1. Inleiding
+# Inleiding
 
 ## Leeswijzer
 
@@ -66,7 +66,7 @@ Dit heeft gevolgen voor het beheer van de standaard. Naast de groei in de aantal
 
 
 
-# 2. Strategie
+# Strategie
 
 De strategische activiteiten van BOMOS bestaan uit de onderdelen Visie, Govenance en Financiering. Deze onderdelen en hun toepassing op het beheer van de ARD-standaard worden hieronder beschreven.
 
@@ -133,7 +133,7 @@ Het beheer van de ADR-standaard wordt gefinancierd door min. BZK voor een initi√
 
 
 
-# 3. Tactiek
+# Tactiek
 
 ## Community
 
@@ -202,7 +202,7 @@ De ADR-standaard heeft de &#39;pas toe of leg uit&#39; -status van Forum Standaa
 
 
 
-# 4. Operationeel
+# Operationeel
 
 ## Initiatie
 
@@ -284,7 +284,7 @@ De vergaderstukken zijn gepubliceerd op:<br>
 
 
 
-# 5. Implementatieondersteuning
+# Implementatieondersteuning
 
 ## Opleiding en advies
 
@@ -311,7 +311,7 @@ Na validatie met de API-test tool is het mogelijk een badge te genereren waarmee
 
 
 
-# 6. Communicatie
+# Communicatie
 
 ## Promotie
 
