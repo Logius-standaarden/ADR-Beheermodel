@@ -36,7 +36,7 @@ var respecConfig = {
   ],
 
   // url van de github repository waar je in werkt
-  github: "https://github.com/Logius-standaarden/API-Design-Rules/Governance",
+  github: "https://github.com/Logius-standaarden/ADR-Beheermodel",
 
   alternateFormats: [
   {
@@ -56,7 +56,7 @@ var respecConfig = {
   // if not set, the url's will be generated on the respecConfig.github automatically  
   nl_github: {
     //  issueBase: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/issues",
-    revision: "https://github.com/Logius-standaarden/API-Design-Rules/Governance",
+    revision: "https://github.com/Logius-standaarden/ADR-Beheermodel",
     //  pullrequests: "https://github.com/Logius-standaarden/Digikoppeling-Koppelvlakstandaard-REST-API/pulls"
   },
 
