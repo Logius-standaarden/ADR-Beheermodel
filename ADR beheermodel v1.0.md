@@ -117,9 +117,9 @@ Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participa
 4. Als lid van het OBDO
 
 *Ad 1) Deelname aan de API-Community staat open voor alle belanghebbenden;*  
-*Ad 2) Aangezien het overleg van de Technische Architectuur Groep (het Technisch Overleg) het eerste besluitvormende gremium is van de standaard, en besluitvorming in dit gremium plaatsvindt op basis van consensus, stelt Logius een aantal voorwaarden aan deelname:*  
-*Ad 3) Volgt, zodra bekend is welk gremium dit is;*  
-*Ad 4) Het OBDO kent een vaste vertegenwoordiging. [Zie voor meer informatie de governance van Digitaleoverheid.nl](https://www.digitaleoverheid.nl/governance-digitale-overheid/).*
+*Ad 2) Invulling van het Tactisch overleg volgt, zodra bekend is welk gremium dit is;*  
+*Ad 3) Het OBDO kent een vaste vertegenwoordiging. [Zie voor meer informatie de governance van Digitaleoverheid.nl](https://www.digitaleoverheid.nl/governance-digitale-overheid/).*  
+*Ad 4) Aangezien het overleg van de Technische Architectuur Groep (het Technisch Overleg) het eerste besluitvormende gremium is van de standaard, en besluitvorming in dit gremium plaatsvindt op basis van consensus, stelt Logius een aantal voorwaarden aan deelname:*  
 
    1.	Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.
    2.	De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.
