@@ -6,10 +6,10 @@ var respecConfig = {
   
   pubDomain: "api",
   shortName: "adr-beheer",
-
+  publishDate: "2021-09-10",
 
   publishVersion: "1.0",
-  previousPublishVersion: "", 
+  //previousPublishVersion: "", 
 
   addSectionLinks: true,
 
@@ -37,7 +37,11 @@ var respecConfig = {
 
   // url van de github repository waar je in werkt
   github: "https://github.com/Logius-standaarden/ADR-Beheermodel",
-
+  nl_github: {
+    issueBase: "https://github.com/Geonovum/KP-APIs/issues",
+    revision: "https://github.com/Logius-standaarden/ADR-Beheermodel/commits",
+    pullsBase: "https://github.com/Logius-standaarden/ADR-Beheermodel/pulls",
+  },
   alternateFormats: [
   {
     label: "pdf",
