@@ -25,26 +25,28 @@ Het Nut en de werking van de standaard zijn reeds goed beschreven door het Forum
 
 ### Status
 
-De actuele versie van de ADR-standaard is 1.0. Deze versie is op 09-07-2020 door het OBDO vastgesteld op advies van het Forum Standaardisatie.   
-De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt kort gezegd in dat Nederlandse overheden en instellingen uit de (semi) publieke sector verplicht zijn deze standaard toe te passen op het moment dat zij REST API’s gaan gebruiken voor het ontsluiten van overheidsinformatie en/of functionaliteit. (Zie voor meer informatie over het [pas toe of leg uit beleid.](https://www.forumstandaardisatie.nl/node/229))   
+De actuele versie van de ADR-standaard is 1.0. Deze versie is op 09-07-2020 door het OBDO vastgesteld op advies van het Forum Standaardisatie.  
+De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt kort gezegd in dat Nederlandse overheden en instellingen uit de (semi) publieke sector verplicht zijn deze standaard toe te passen op het moment dat zij REST API’s gaan gebruiken voor het ontsluiten van overheidsinformatie en/of functionaliteit. (Zie voor meer informatie over het [pas toe of leg uit beleid.](https://www.forumstandaardisatie.nl/node/229))  
+
 - De verplichting is gepubliceerd door het Forum Standaardisatie op:  
-https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules 
+<https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules>  
 - Versie 1.0 van de ADR is gepubliceerd op:  
-https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0 
+<https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0>  
 - De laatste versie van de ADR is gepubliceerd op:  
-https://publicatie.centrumvoorstandaarden.nl/api/adr/ 
+<https://publicatie.centrumvoorstandaarden.nl/api/adr/>  
 - De laatste concept versie van de standard is gepubliceerd op:  
-https://logius-standaarden.github.io/API-Design-Rules/ 
+<https://logius-standaarden.github.io/API-Design-Rules/>  
 
 ## Bomos
 
-Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor Open Standaarden (BOMOS). Ook het beheer van de ADR-standaard is op basis van BOMOS ingericht. Voor de beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar het beheerplan van de ADR-standaard is afgeleid. 
+Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor Open Standaarden (BOMOS). Ook het beheer van de ADR-standaard is op basis van BOMOS ingericht. Voor de beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar het beheerplan van de ADR-standaard is afgeleid.  
 
 ![Bomos model](media/Bomos_model.png "Bomos model")
 > Figuur 1. Bomos model
 
 Voor meer informatie over BOMOS zie ook [de beslisboom van het forumstandaardisatie](https://beslisboom.forumstandaardisatie.nl/thema/ontwikkelen-en-beheren-van-open-standaarden).  
-BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan bevinden. Deze fase bepaalt mede op welke beheeronderdelen meer of minder wordt ingezet. De verschillende fases zijn: 
+BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan bevinden. Deze fase bepaalt mede op welke beheeronderdelen meer of minder wordt ingezet. De verschillende fases zijn:  
+
 1.	Creatie/ontwikkeling
 2.	Introductie
 3.	Implementatie/groei
@@ -57,14 +59,13 @@ BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan
 De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie van de standaard is 15-10-2019 aangemeld bij het Forum Standaardisatie en op 09-07-2020 op de lijst van verplichte standaarden opgenomen. Vanuit het Kennisplatform API’s en Logius Centrum voor Standaarden wordt momenteel nog volop aan de API Design Rules gewerkt en de verwachting is dat de standaard nog de nodige ontwikkelingen door gaat maken. Daarnaast komt het gebruik van de API Design Rules pas net op stoom, waardoor er van een volwaardige toepassing bij de beoogde doelgroep nog geen sprake is.  
 
 Dit heeft gevolgen voor het beheer van de standaard. Naast de groei in de aantallen toepassingen van de standaard is ook relevant dat eerst nog minor en major wijzigingen in de standaard op een correcte manier worden doorgevoerd en er veel informatie beschikbaar is die gebruikers helpt bij de implementatie van de standaard. Daarom is er komende tijd vooral aandacht voor:
--	Het in de praktijk bestendigen van het beheer van de standaard; 
--	Gestaag doorontwikkeling van de specificaties zelf;
--	Bouwen en aanbieden ondersteunende tooling; 
--	Groei in het aantal toepassingen van de standaard;
--	Monitoring van het gebruik van de standaard;
--	Groei van de community rond de standaard.
 
-
+-	Het in de praktijk bestendigen van het beheer van de standaard;  
+-	Gestaag doorontwikkeling van de specificaties zelf;  
+-	Bouwen en aanbieden ondersteunende tooling;  
+-	Groei in het aantal toepassingen van de standaard;  
+-	Monitoring van het gebruik van de standaard;  
+-	Groei van de community rond de standaard.  
 
 # Strategie
 
@@ -78,15 +79,15 @@ Met de API Design Rules standaard wil de Nederlandse overheid interoperabiliteit
 
 ### Governancestructuur
 
-Bij het beheer van een open standaard hoort een open governance en een open procedure voor belanghebbenden om te kunnen participeren in het beheer. Logius, neemt hierin de rol van onafhankelijke, duurzame beheerpartij en facilitator. Bij het beheer van de ADR worden verschillende gremia onderscheiden die gezamenlijk invulling geven aan de governance op de standaard: 
+Bij het beheer van een open standaard hoort een open governance en een open procedure voor belanghebbenden om te kunnen participeren in het beheer. Logius, neemt hierin de rol van onafhankelijke, duurzame beheerpartij en facilitator. Bij het beheer van de ADR worden verschillende gremia onderscheiden die gezamenlijk invulling geven aan de governance op de standaard:  
 
-1.API-community (Interesse Groep - IG)  
+1. API-community (Interesse Groep - IG)  
 Dit is het meest operationele gremium waarin iedere belangstellende/belanghebbende vragen kan stellen over de ADR-standaard en suggesties kan doen voor de doorontwikkeling van de standaard. Dergelijke vragen en suggesties worden door Logius verzameld en voorgelegd aan het Technisch Overleg en als issue geregistreerd bij de werkgroep ADR van het kennisplatform API’s.  
-2.Technisch Overleg (Technische Architectuur Groep – TAG)  
+2. Technisch Overleg (Technische Architectuur Groep – TAG)  
 Het Technisch Overleg is een periodieke bijeenkomst van de Technische Architectuur Groep (TAG) waarbij de vragen en doorontwikkelwensen m.b.t. de ADR worden doorgenomen, geprioriteerd en worden uitgewerkt. Daarnaast wordt door de leden de releaseplanning en de roadmap opgesteld. Deelname aan de TAG is vrij voor eenieder die een belang heeft bij de standaard (overheid, wetenschap en markt)  
-3.Tactisch overleg ADR  
-Dit gremium is verantwoordelijk voor het vaststellen van de doorontwikkel-roadmap, het vaststellen van minor releases van de standaard en dient als het voorportaal van het strategisch/besluitvormende gremium: het OBDO.
-4.Het Overheidsbrede Beleidsoverleg Digitale Overheid (OBDO)  
+3. Tactisch overleg ADR  
+Dit gremium is verantwoordelijk voor het vaststellen van de doorontwikkel-roadmap, het vaststellen van minor releases van de standaard en dient als het voorportaal van het strategisch/besluitvormende gremium: het OBDO.  
+4. Het Overheidsbrede Beleidsoverleg Digitale Overheid (OBDO)  
 Dit is het hoogst ambtelijke gremium dat besluit over major releases van de standaard, het beheermodel van de standaard en externe publicaties over releases en van het standaardenbeleid. Op dit moment wordt het OBDO louter ‘gevoed’ door Forum Standaardisatie en is de focus voornamelijk het bestendigen van major releases van de standaard. Op het moment dat het tactische gremium is ingevuld, zal het OBDO waarschijnlijk een breder scala aan onderwerpen langs krijgen ter bestendiging.  
 
 > *N.B. Het tactisch overleg ADR gremium is momenteel nog niet actief, waardoor Logius bij wijzigingen aan de standaard, de nieuwe versie voorlegt aan het Forum Standaardisatie, voor het borgen van een zo breed mogelijke afstemming met verschillende belanghebbenden.*  
@@ -108,14 +109,16 @@ In alle overleggremia vindt besluitvorming plaats op basis van consensus. Mocht 
 
 ### Deelname
 
-Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participatie van de verschillende belanghebbenden. Belanghebbenden kunnen op vier manieren participeren aan het wijzigings- en besluitvormingsproces: 
-1.Als lid van de API Community van het Kennisplatform / de Interesse Groep (IG)  
-2.Als lid van de Technische Architectuur Groep (TAG)  
-3.Als lid van het Tactisch overleg  
-4.Als lid van het OBDO
+Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participatie van de verschillende belanghebbenden. Belanghebbenden kunnen op vier manieren participeren aan het wijzigings- en besluitvormingsproces:  
+
+1. Als lid van de API Community van het Kennisplatform / de Interesse Groep (IG)  
+2. Als lid van de Technische Architectuur Groep (TAG)  
+3. Als lid van het Tactisch overleg  
+4. Als lid van het OBDO
 
 *Ad 1) Deelname aan de API-Community staat open voor alle belanghebbenden;*  
 *Ad 2) Aangezien het overleg van de Technische Architectuur Groep (het Technisch Overleg) het eerste besluitvormende gremium is van de standaard, en besluitvorming in dit gremium plaatsvindt op basis van consensus, stelt Logius een aantal voorwaarden aan deelname:*  
+
    1.	Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.
    2.	De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.
    3.	Het belang van de Nederlandse overheid dient voldoende geborgd te zijn in het technisch overleg.
@@ -129,9 +132,7 @@ Personen/partijen die willen deelnemen aan het technisch overleg kunnen een mail
 
 ## Financering
 
-Het beheer van de ADR-standaard wordt gefinancierd door min. BZK voor een initiële periode van tenminste drie jaar (2020-2023) om gebruikers het vertrouwen te geven dat er geen desinvesteringen worden gedaan bij het implementeren van de standaard. Na drie jaar wordt de financiering verlengd als blijkt dat het nut van en de behoefte aan de standaard nog aanwezig is. 
-
-
+Het beheer van de ADR-standaard wordt gefinancierd door min. BZK voor een initiële periode van tenminste drie jaar (2020-2023) om gebruikers het vertrouwen te geven dat er geen desinvesteringen worden gedaan bij het implementeren van de standaard. Na drie jaar wordt de financiering verlengd als blijkt dat het nut van en de behoefte aan de standaard nog aanwezig is.  
 
 # Tactiek
 
@@ -200,8 +201,6 @@ Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie o
 
 De ADR-standaard heeft de &#39;pas toe of leg uit&#39; -status van Forum Standaardisatie. Dit betekent kort gezegd dat Nederlandse overheidspartijen en partijen uit de (semi) publieke sector deze standaard dienen toe te passen op het moment dat zij hun informatie met behulp van (REST) API&#39;s willen ontsluiten. Zie hoofdstuk 1 voor meer informatie.
 
-
-
 # Operationeel
 
 ## Initiatie
@@ -265,8 +264,6 @@ Alle documenten m.b.t. de standaard en het beheer van de standaard worden openba
 - De specificaties van de standaard
 - De voorlopige specificaties van de nieuwe versie van de standaard.
 
-
-
 Versie 1.0 van de ADR is gepubliceerd op:<br>
 [https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0](https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)
 
@@ -281,8 +278,6 @@ Het beheermodel is gepubliceerd op:<br>
 
 De vergaderstukken zijn gepubliceerd op:<br>
 [Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken)
-
-
 
 # Implementatieondersteuning
 
@@ -308,8 +303,6 @@ Certificatie van API&#39;s is op dit moment niet mogelijk. Wel is het mogelijk A
 - [API-test.nl](https://api-test.nl/)  
 
 Na validatie met de API-test tool is het mogelijk een badge te genereren waarmee aangetoond wordt dat de API voldoet aan alle test voorwaarden.
-
-
 
 # Communicatie
 
