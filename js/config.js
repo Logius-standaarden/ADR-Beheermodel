@@ -5,7 +5,7 @@ var respecConfig = {
   specType: "ST",
   
   pubDomain: "api",
-  shortName: "beheermod",
+  shortName: "adr-beheer",
 
 
   publishVersion: "1.0",
