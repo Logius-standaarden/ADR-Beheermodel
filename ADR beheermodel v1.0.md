@@ -54,7 +54,7 @@ BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan
 ![Bomos_levenscyclus](media/Bomos_levenscyclus.png "Bomos levenscyclus")
 > Figuur 2. Bomos levenscyclus
 
-De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie standaard is 15-10-2019 aangemeld bij het Forum Standaardisatie en op 09-07-2020 op de lijst van verplichte standaarden opgenomen. Vanuit het Kennisplatform API’s en Logius Centrum voor Standaarden wordt momenteel nog volop aan de API Design Rules gewerkt en de verwachting is dat de standaard nog de nodige ontwikkelingen door gaat maken. Daarnaast komt het gebruik van de API Design Rules pas net op stoom, waardoor er van een volwaardige toepassing bij de beoogde doelgroep nog geen sprake is.  
+De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie van de standaard is 15-10-2019 aangemeld bij het Forum Standaardisatie en op 09-07-2020 op de lijst van verplichte standaarden opgenomen. Vanuit het Kennisplatform API’s en Logius Centrum voor Standaarden wordt momenteel nog volop aan de API Design Rules gewerkt en de verwachting is dat de standaard nog de nodige ontwikkelingen door gaat maken. Daarnaast komt het gebruik van de API Design Rules pas net op stoom, waardoor er van een volwaardige toepassing bij de beoogde doelgroep nog geen sprake is.  
 
 Dit heeft gevolgen voor het beheer van de standaard. Naast de groei in de aantallen toepassingen van de standaard is ook relevant dat eerst nog minor en major wijzigingen in de standaard op een correcte manier worden doorgevoerd en er veel informatie beschikbaar is die gebruikers helpt bij de implementatie van de standaard. Daarom is er komende tijd vooral aandacht voor:
 -	Het in de praktijk bestendigen van het beheer van de standaard; 
@@ -84,10 +84,11 @@ Dit is het meest operationele gremium waarin iedere belangstellende/belanghebben
 2.	Technisch Overleg (Technische Architectuur Groep – TAG)  
 Het Technisch Overleg is een periodieke bijeenkomst van de Technische Architectuur Groep (TAG) waarbij de vragen en doorontwikkelwensen m.b.t. de ADR worden doorgenomen, geprioriteerd en worden uitgewerkt. Daarnaast wordt door de leden de releaseplanning en de roadmap opgesteld. Deelname aan de TAG is vrij voor eenieder die een belang heeft bij de standaard (overheid, wetenschap en markt) 
 3.	Tactisch overleg ADR  
-Dit gremium is verantwoordelijk voor het vaststellen van de doorontwikkel-roadmap, het vaststellen van minor releases van de standaard en dient als het voorportaal van het strategisch/besluitvormende gremium: het OBDO.*N.B. Dit tactische gremium is momenteel nog niet actief, waardoor Logius bij wijzigingen aan de standaard, de nieuwe versie voorlegt aan het Forum Standaardisatie, voor het borgen van een zo breed mogelijke afstemming met verschillende belanghebbenden.*
+Dit gremium is verantwoordelijk voor het vaststellen van de doorontwikkel-roadmap, het vaststellen van minor releases van de standaard en dient als het voorportaal van het strategisch/besluitvormende gremium: het OBDO.  
+*N.B. Dit tactische gremium is momenteel nog niet actief, waardoor Logius bij wijzigingen aan de standaard, de nieuwe versie voorlegt aan het Forum Standaardisatie, voor het borgen van een zo breed mogelijke afstemming met verschillende belanghebbenden.*
 4.	Het Overheidsbrede Beleidsoverleg Digitale Overheid (OBDO) 
 Dit is het hoogst ambtelijke gremium dat besluit over major releases van de standaard, het beheermodel van de standaard en externe publicaties over releases en van het standaardenbeleid. Op dit moment wordt het OBDO louter ‘gevoed’ door Forum Standaardisatie en is de focus voornamelijk het bestendigen van major releases van de standaard. Op het moment dat het tactische gremium is ingevuld, zal het OBDO waarschijnlijk een breder scala aan onderwerpen langs krijgen ter bestendiging.  
-*N.B. De definitieve invulling van de tactische en strategische laag wordt eind 2021 duidelijk*     
+*N.B. De definitieve invulling van de tactische en strategische laag wordt eind 2021 duidelijk.*     
 
 In tabelvorm: 
 
@@ -95,8 +96,8 @@ In tabelvorm:
 
 |**Gremium**|**Accent**|**Rol participant**|**Ondersteuning door beheerder (Logius)**|
 |---|---|---|---|
-|**API Community** <br> (omvang onbeperkt)|Inhoud – delen|1. Volgen van ontwikkelingen.  <br>2. Leveren van input voor de doorontwikkeling van de standaard.|1. Informatie m.b.t. specificaties en beheer open delen met community.  <br>2. Deelnemen aan  stuurgroep en werkgroepen van Kennisplatform API’s.| 
-|**API Technisch Overleg** <br>(Operationeel, 4x per jaar)|Inhoud - afstemmen| Samen met andere experts:  <br>1. Inhoudelijk ontwikkelen van standaard onderdelen en bijbehorende documentatie.  <br>2. Voorbereiden van de release-planning.  <br>3. Prioriteiten stellen voor de ontwikkeling, roadmap van nieuwe releases van de standaarden.  <br>4. Goedkeuring van aanpassingen op de standaard.  |1. Analyseren, ontwerpen en uitwerken van specificaties.  <br>2. Volgen en beïnvloeden van aanpalende standaarden.  <br>3. Organiseren bijeenkomsten.  <br>4. Opstellen en verspreiden notulen. <br>5. Beschikbaar stellen specificaties.|
+|**API Community** <br> (omvang onbeperkt)|Inhoud – delen|Samen met alle leden van de Interesse Groep (IG):  <br>1. Volgen van ontwikkelingen.  <br>2. Leveren van input voor de doorontwikkeling van de standaard.|1. Informatie m.b.t. specificaties en beheer open delen met community.  <br>2. Deelnemen aan  stuurgroep en werkgroepen van Kennisplatform API’s.| 
+|**API Technisch Overleg** <br>(Operationeel, 4x per jaar)|Inhoud - afstemmen| Samen met andere experts van de Technische Architectuur Groep (TAG):  <br>1. Inhoudelijk ontwikkelen van standaard onderdelen en bijbehorende documentatie.  <br>2. Voorbereiden van de release-planning.  <br>3. Prioriteiten stellen voor de ontwikkeling, roadmap van nieuwe releases van de standaarden.  <br>4. Goedkeuring van aanpassingen op de standaard.  |1. Analyseren, ontwerpen en uitwerken van specificaties.  <br>2. Volgen en beïnvloeden van aanpalende standaarden.  <br>3. Organiseren bijeenkomsten.  <br>4. Opstellen en verspreiden notulen. <br>5. Beschikbaar stellen specificaties.|
 |**Tactisch/Strategisch** <br>(4x per jaar)|Prioritering proces en uitwerken strategisch advies|Samen met andere participanten:<br>1. Vaststellen roadmap van de standaard. <br>2. Voorportaal OBDO. <br>3. Vaststellen minor releases van de standaard.|1. Analyseren, ontwerpen en uitwerken van beleidszaken, (release)planning.|	
 |**OBDO** <br> (Strategisch besluitvormend, 2x per jaar)|Bestuurlijk besluit|Samen met andere bestuurders: <br>1. Vaststellen major releases van de standaard. <br>2.Vaststellen beheermodel van de standaard. <br>3. Vaststellen externe publicaties over het standaardenbeleid en releases.|1.Begeleiding van de Adviesraad en inbreng via secretariaat OBDO. <br>2. Publiceren standaarden en andere Standaard-informatie.|
 > Figuur 3. Overheidsbreed Beleidsoverleg Digitale Overheid
@@ -108,8 +109,8 @@ In alle overleggremia vindt besluitvorming plaats op basis van consensus. Mocht 
 ### Deelname
 
 Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participatie van de verschillende belanghebbenden. Belanghebbenden kunnen op vier manieren participeren aan het wijzigings- en besluitvormingsproces: 
-1.	Als lid van de API Community 
-2.	Als lid van de Technische Architectuurgroep 
+1.	Als lid van de API Community van het Kennisplatform / de Interesse Groep (IG)
+2.	Als lid van de Technische Architectuur Groep (TAG) 
 3.	Als lid van het Tactisch overleg 
 4.	Als lid van het OBDO
 
@@ -234,7 +235,7 @@ De procedure van RCF naar daadwerkelijke wijziging ziet er als volgt uit:
 - RFC worden na vaststelling in het TO Openbaar geconsulteerd
 - Na vaststelling volgt publicatie van de nieuwe versie van standaard
 
-> N.B. Zolang het Centrum voor Standaarden nog geen predicaat &quot;Uitstekend beheer&quot; heeft ontvangen van Forum Standaardisatie, zullen nieuwe versies na vaststelling in het TO aan Forum Standaardisatie worden voorgelegd ter beoordeling.
+> N.B. Zolang het Centrum voor Standaarden nog geen predicaat &quot;Uitstekend beheer&quot; heeft ontvangen van Forum Standaardisatie, zullen nieuwe versies na vaststelling in het TO aan Forum Standaardisatie worden voorgelegd ter beoordeling.  
 > N.B.2. Het technisch overleg is momenteel samengevoegd met het structurele overleg van de werkgroep ADR van het Kennisplatform (zie 2.2.3)
 
 Dit is schematisch weergegeven in het onderstaande ADR Governance model:  
@@ -276,10 +277,10 @@ De laatste concept versie van de standard is gepubliceerd op:<br>
 [https://logius-standaarden.github.io/API-Design-Rules/](https://logius-standaarden.github.io/API-Design-Rules/)
 
 Het beheermodel is gepubliceerd op:<br>
-[API-Design-Rules/Governance at master · Logius-standaarden/API-Design-Rules (github.com)](https://github.com/Logius-standaarden/API-Design-Rules/tree/master/Governance)
+[Logius-standaarden/ADR-Beheermodel (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel)
 
 De vergaderstukken zijn gepubliceerd op:<br>
-[API-Design-Rules/Governance at master · Logius-standaarden/API-Design-Rules (github.com)](https://github.com/Logius-standaarden/API-Design-Rules/tree/master/Governance)
+[Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken)
 
 
 
