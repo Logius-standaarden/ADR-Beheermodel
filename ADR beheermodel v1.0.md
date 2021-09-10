@@ -99,7 +99,7 @@ In tabelvorm:
 |---|---|---|---|
 |**API Community** <br> (omvang onbeperkt)|Inhoud – delen|Samen met alle leden van de Interesse Groep (IG):  <br>1. Volgen van ontwikkelingen.  <br>2. Leveren van input voor de doorontwikkeling van de standaard.|1. Informatie m.b.t. specificaties en beheer open delen met community.  <br>2. Deelnemen aan  stuurgroep en werkgroepen van Kennisplatform API’s.| 
 |**API Technisch Overleg** <br>(Operationeel, 4x per jaar)|Inhoud - afstemmen| Samen met andere experts van de Technische Architectuur Groep (TAG):  <br>1. Inhoudelijk ontwikkelen van standaard onderdelen en bijbehorende documentatie.  <br>2. Voorbereiden van de release-planning.  <br>3. Prioriteiten stellen voor de ontwikkeling, roadmap van nieuwe releases van de standaarden.  <br>4. Goedkeuring van aanpassingen op de standaard.  |1. Analyseren, ontwerpen en uitwerken van specificaties.  <br>2. Volgen en beïnvloeden van aanpalende standaarden.  <br>3. Organiseren bijeenkomsten.  <br>4. Opstellen en verspreiden notulen. <br>5. Beschikbaar stellen specificaties.|
-|**Tactisch/Strategisch** <br>(4x per jaar)|Prioritering proces en uitwerken strategisch advies|Samen met andere participanten:<br>1. Vaststellen roadmap van de standaard. <br>2. Voorportaal OBDO. <br>3. Vaststellen minor releases van de standaard.|1. Analyseren, ontwerpen en uitwerken van beleidszaken, (release)planning.|	
+|**Tactisch/Strategisch** <br>(4x per jaar)|Prioritering proces en uitwerken strategisch advies|Samen met andere participanten:<br>1. Vaststellen roadmap van de standaard. <br>2. Voorportaal OBDO. <br>3. Vaststellen minor releases van de standaard.|1. Analyseren, ontwerpen en uitwerken van beleidszaken, (release)planning.|  
 |**OBDO** <br> (Strategisch besluitvormend, 2x per jaar)|Bestuurlijk besluit|Samen met andere bestuurders: <br>1. Vaststellen major releases van de standaard. <br>2.Vaststellen beheermodel van de standaard. <br>3. Vaststellen externe publicaties over het standaardenbeleid en releases.|1.Begeleiding van de Adviesraad en inbreng via secretariaat OBDO. <br>2. Publiceren standaarden en andere Standaard-informatie.|
 > Figuur 3. Overheidsbreed Beleidsoverleg Digitale Overheid
 
@@ -118,6 +118,8 @@ Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participa
 
 *Ad 1) Deelname aan de API-Community staat open voor alle belanghebbenden;*  
 *Ad 2) Aangezien het overleg van de Technische Architectuur Groep (het Technisch Overleg) het eerste besluitvormende gremium is van de standaard, en besluitvorming in dit gremium plaatsvindt op basis van consensus, stelt Logius een aantal voorwaarden aan deelname:*  
+*Ad 3) Volgt, zodra bekend is welk gremium dit is;*  
+*Ad 4) Het OBDO kent een vaste vertegenwoordiging. [Zie voor meer informatie de governance van Digitaleoverheid.nl](https://www.digitaleoverheid.nl/governance-digitale-overheid/).*
 
    1.	Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.
    2.	De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.
@@ -125,10 +127,7 @@ Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participa
 
 Personen/partijen die willen deelnemen aan het technisch overleg kunnen een mail sturen aan api@logius.nl, waarin zij aangeven wat hun belang is bij de standaard. Met inachtneming van bovenstaande punten, beoordeeld Logius de aanvraag.
 
-> N.B. Gezien de grote overlap tussen de deelnemers van het beoogde Technisch Overleg en de werkgroep ARD van het Kennisplatform (zie *Samenwerking met andere beheer organisaties*). Hebben Logius en het kennisplatform besloten deze overleggen vooralsnog te combineren. Als in de toekomst blijkt dat deze combinatie geen goede invulling geeft aan een effectieve en gedragen besluitvorming m.b.t. tot de standaard, kan Logius ten allen tijde een eigen reeks Technische Overleggen organiseren. 
-
-***Ad 3) Volgt, zodra bekend is welk gremium dit is;***  
-*Ad 4) Het OBDO kent een vaste vertegenwoordiging. [Zie voor meer informatie de governance van Digitaleoverheid.nl](https://www.digitaleoverheid.nl/governance-digitale-overheid/).*
+> N.B. Gezien de grote overlap tussen de deelnemers van het beoogde Technisch Overleg en de werkgroep ADR van het Kennisplatform (zie *Samenwerking met andere beheer organisaties*), hebben Logius en het kennisplatform besloten deze overleggen vooralsnog te combineren. Als in de toekomst blijkt dat deze combinatie geen goede invulling geeft aan een effectieve en gedragen besluitvorming m.b.t. tot de standaard, kan Logius ten allen tijde een eigen reeks Technische Overleggen organiseren.  
 
 ## Financering
 
