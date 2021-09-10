@@ -1,6 +1,6 @@
 var respecConfig = {
   //voor specStatus mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specStatus
-  specStatus: "VV",
+  specStatus: "DEF",
   //voor specType mogelijkheden zie https://github.com/Logius-standaarden/respec/wiki/specType
   specType: "ST",
   
