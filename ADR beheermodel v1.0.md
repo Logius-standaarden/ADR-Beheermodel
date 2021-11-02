@@ -29,13 +29,13 @@ De actuele versie van de ADR-standaard is 1.0. Deze versie is op 09-07-2020 door
 De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt kort gezegd in dat Nederlandse overheden en instellingen uit de (semi) publieke sector verplicht zijn deze standaard toe te passen op het moment dat zij REST API’s gaan gebruiken voor het ontsluiten van overheidsinformatie en/of functionaliteit. (Zie voor meer informatie over het [pas toe of leg uit beleid.](https://www.forumstandaardisatie.nl/node/229))  
 
 - De verplichting is gepubliceerd door het Forum Standaardisatie op:  
-<https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules>  
+(https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)  
 - Versie 1.0 van de ADR is gepubliceerd op:  
-<https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0>  
+(https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)  
 - De laatste versie van de ADR is gepubliceerd op:  
-<https://publicatie.centrumvoorstandaarden.nl/api/adr/>  
+(https://publicatie.centrumvoorstandaarden.nl/api/adr/)  
 - De laatste concept versie van de standard is gepubliceerd op:  
-<https://logius-standaarden.github.io/API-Design-Rules/>  
+(https://logius-standaarden.github.io/API-Design-Rules/) 
 
 ## Bomos
 
