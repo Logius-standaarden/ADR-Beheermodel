@@ -45,7 +45,7 @@ var respecConfig = {
   alternateFormats: [
   {
     label: "pdf",
-    uri: ".pdf",
+    uri: "ADR-Beheermodel.pdf",
   }],
   // this parameter will add the tag_name of the latest release to the document Title
   // only set this parameter when a release has been set
