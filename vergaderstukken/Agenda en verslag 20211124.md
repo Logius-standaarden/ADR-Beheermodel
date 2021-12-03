@@ -33,27 +33,26 @@ Mededeling en algemene vraag: Extensies zijn vast gesteld. Welke extensies kunne
 
 ### 1. Pull requests (PR)
 
-Pull requests
-GitHub link gedeeld en op scherm getoond. https://github.com/Logius-standaarden/API-Design-Rules/pulls
+> GitHub link gedeeld en op scherm getoond. https://github.com/Logius-standaarden/API-Design-Rules/pulls
 
-**PR#117** Added API rule for non-existing parameters [Issue 394](https://github.com/Geonovum/KP-APIs/issues/394)
-Edwin Wisse licht aanpassing toe: gebaseerd op suggestie van Bakker: ongeldige query dient foutmelding te geven. Farla vindt de inhoud prima, maar twijfelt of dit past in het normatieve deel; het is zeer gedetailleerd in contrast met het abstracte natuur van het document. Scheidingslijn tussen normatief en extensie vervaagd. Roes stelt voor het in error-handeling extensie toe te voegen. Dit wordt geaccepteerd en Wisse maakt een pull request voor de extensie.
+**PR#117** Added API rule for non-existing parameters [Issue #394](https://github.com/Geonovum/KP-APIs/issues/394) 
+> Edwin Wisse licht aanpassing toe: gebaseerd op suggestie van Bakker: ongeldige query dient foutmelding te geven. Farla vindt de inhoud prima, maar twijfelt of dit past in het normatieve deel; het is zeer gedetailleerd in contrast met het abstracte natuur van het document. Scheidingslijn tussen normatief en extensie vervaagd. Roes stelt voor het in error-handeling extensie toe te voegen. Dit wordt geaccepteerd en Wisse maakt een pull request voor de extensie.
 
 **PR#120** herstructurering van API-53 nav [issue #420](https://github.com/Geonovum/KP-APIs/issues/420)
 > Martin licht toe: structuur van rationale en implicaties toegepast i.p.v. voorbeelden. Joost Farla gaat de PR reviewen en daarna kan deze worden gemerged
 
-**PR#119** Update API-17 nav issue #421. Hierbij zijn meer situaties beschreven waarbij Engelse documentatie is toegestaan.
+**PR#119** Update API-17 nav [issue #421](https://github.com/Geonovum/KP-APIs/issues/421). Hierbij zijn meer situaties beschreven waarbij Engelse documentatie is toegestaan.
 > Martin licht toe: meer ruimte gegeven om Engelse taal te gebruiken.
 
-**PR#118** API-04 design rule herschreven op basis van issue #419
+**PR#118** API-04 design rule herschreven op basis van [issue #419](https://github.com/Geonovum/KP-APIs/issues/419)
 > Martin licht toe: naast bestaande glossary is het ook mogelijk een eigen glossary te ontwikkelen.
 
-> Discussie:
-Sloos: wil punten uit #119 en #118 samenvoegen.
-Roes: Te veel vrijheid creëert discussie over gebruik van taal. Voorstel: termen in Nederlands, maar documentatie in Engels voor samenwerking met buitenlandse collega’s.
-Sloos: of keuze alles in Engels of tooling moet meerdere talen ondersteunen.
-Hotting: software ontwikkeld in buitenland (voorbeeld: gemeentesoftware ontwikkeld in Roemenië) kan makkelijker in Engels.
-> Consensus wordt niet bereikt, volgende keer men meer de kans geven van tevoren hun statement kwijt te kunnen op de issues.
+Discussie:  
+> Sloos: wil punten uit #119 en #118 samenvoegen.  
+> Roes: Te veel vrijheid creëert discussie over gebruik van taal. Voorstel: termen in Nederlands, maar documentatie in Engels voor samenwerking met buitenlandse collega’s.  
+> Sloos: of keuze alles in Engels of tooling moet meerdere talen ondersteunen.  
+> Hotting: software ontwikkeld in buitenland (voorbeeld: gemeentesoftware ontwikkeld in Roemenië) kan makkelijker in Engels.  
+> Consensus wordt niet bereikt, volgende keer men meer de kans geven van tevoren hun statement kwijt te kunnen op de issues.  
 
 Oproep aan de werkgroep: geef commentaar bij de issue's uit de openbare consultatie [Lijst issue's gefilterd](https://github.com/Geonovum/KP-APIs/issues?q=is%3Aopen+is%3Aissue+label%3A%22API+design+rules+%28normatief%29%22+label%3AConsultatie)
 
@@ -65,14 +64,13 @@ Oproep aan de werkgroep: geef commentaar bij de issue's uit de openbare consulta
 
 > Martin: PATCH staat onevenredig prominent in document; dit wordt aangepast.
 
-> Martin: Verdere onderbouwing voor design rules wordt in de toekomst aangepast. 
-> Roel: iedere regel moet toetsbaar zijn. 
-> Martin: ADR moet volledig herschreven worden. Dit willen we bij de eerst volgende release toepassen. 
-> Hotting: Forum wil testbare regels en rapportage, hiervoor wordt een opdracht verstrekt door het Forum. 
-> Martin: 7 regels worden nu al getest. Niet alle regels zijn toetsbaar. We willen onderscheid tussen design en runtime in ADR. Runtime betreft testbare regels. Design time betreft toelichting en principes voor het design.
-> Roes: Manier vinden om aan te geven aan welke extensies getracht is te voldoen om enkel op deze getoetst te worden.
+> Martin: Verdere onderbouwing voor design rules wordt in de toekomst aangepast.  
+> Roel: iedere regel moet toetsbaar zijn.  
+> Martin: ADR moet volledig herschreven worden. Dit willen we bij de eerst volgende release toepassen.  
+> Hotting: Forum wil testbare regels en rapportage, hiervoor wordt een opdracht verstrekt door het Forum.   
+> Martin: 7 regels worden nu al getest. Niet alle regels zijn toetsbaar. We willen onderscheid tussen design en runtime in ADR. Runtime betreft testbare regels. Design time betreft toelichting en principes voor het design.  
+> Roes: Manier vinden om aan te geven aan welke extensies getracht is te voldoen om enkel op deze getoetst te worden.  
 
 ### Rondvraag:
-> Hotting: Duidelijker delen met werkgroep op discussies te faciliteren. Niet iedereen houdt GitHub in de gaten.
+> Hotting: Duidelijker delen met werkgroep op discussies te faciliteren. Niet iedereen houdt GitHub in de gaten.  
 > Henri: Hal extensie onduidelijk of het verplicht is. Zolang het niet vastgesteld is kunnen we er niet mee verder. Roel en Joost pakken het op.
- 
