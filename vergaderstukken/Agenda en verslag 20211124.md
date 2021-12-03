@@ -1,6 +1,7 @@
 # Agenda en Verslag 
 
 Agenda en Verslag van het Technisch Overleg (TO) van de Technische Architectuur Groep (TAG) inzake de API Design Rules.
+> dd 24-11-2020 - Online overleg via MS-Teams
 
 ## Deelnemers
 
