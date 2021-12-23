@@ -41,7 +41,7 @@ De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt k
 
 Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor Open Standaarden (BOMOS). Ook het beheer van de ADR-standaard is op basis van BOMOS ingericht. Voor de beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar het beheerplan van de ADR-standaard is afgeleid.  
 
-![Bomos model](media/Bomos_model.png "Bomos model")
+![Bomos model](media/Bomos_model_v2.svg "Bomos model")
 > Figuur 1. Bomos model
 
 Voor meer informatie over BOMOS zie ook [de beslisboom van het forumstandaardisatie](https://beslisboom.forumstandaardisatie.nl/thema/ontwikkelen-en-beheren-van-open-standaarden).  
@@ -53,7 +53,7 @@ BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan
 4.	Volwaardige toepassing
 5.	Uitfaseren
 
-![Bomos_levenscyclus](media/Bomos_levenscyclus.png "Bomos levenscyclus")
+![Bomos_levenscyclus](media/Bomos_levenscyclus_v2.svg "Bomos levenscyclus")
 > Figuur 2. Bomos levenscyclus
 
 De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie van de standaard is 15-10-2019 aangemeld bij het Forum Standaardisatie en op 09-07-2020 op de lijst van verplichte standaarden opgenomen. Vanuit het Kennisplatform API’s en Logius Centrum voor Standaarden wordt momenteel nog volop aan de API Design Rules gewerkt en de verwachting is dat de standaard nog de nodige ontwikkelingen door gaat maken. Daarnaast komt het gebruik van de API Design Rules pas net op stoom, waardoor er van een volwaardige toepassing bij de beoogde doelgroep nog geen sprake is.  
@@ -137,7 +137,7 @@ Het beheer van de ADR-standaard wordt gefinancierd door min. BZK voor een initi�
 
 ## Community
 
-De ADR community/ Interesse Groep bestaat uit eenieder die belanghebbende of belangstellende is m.b.t. de standaard. Deelname aan de community kent geen drempels of restricties. Leden van de community kunnen alle informatie m.b.t. de standaard en het beheer daarvan inzien via de website en via verschillende kanalen issues of RFC&#39;s melden. Daarnaast kunnen community leden reageren op openbare consultaties en onder bepaalde voorwaarden deelnemen aan de Technische Architectuur Groep (zie 2.2.3).
+De ADR community/ Interesse Groep bestaat uit eenieder die belanghebbende of belangstellende is m.b.t. de standaard. Deelname aan de community kent geen drempels of restricties. Leden van de community kunnen alle informatie m.b.t. de standaard en het beheer daarvan inzien via de website en via verschillende kanalen issues of RFC&#39;s melden. Daarnaast kunnen community leden reageren op openbare consultaties en onder bepaalde voorwaarden deelnemen aan de Technische Architectuur Groep (zie paragraaf [deelname](#Deelname)).
 
 ## Architectuur
 
@@ -160,7 +160,7 @@ De ADR-Standaard volgt de ontwikkeling van internationale standaarden (zoals bij
 
 ### Samenwerking met andere beheerorganisaties
 
-**Kennisplatform API&#39;s**
+#### Kennisplatform API&#39;s
 
 Kennisplatform API&#39;s is een initiatief van Geonovum, Bureau Forum Standaardisatie, Kamer van Koophandel, VNG Realisatie en Logius. Het doel van het Kennisplatform is om de kennis over het toepassen van API&#39;s uit te wisselen en de aanpak bij verschillende organisaties op elkaar af te stemmen en waar nodig te standaardiseren. In het kennisplatform wordt gezamenlijk gekeken naar strategische en tactische vraagstukken rond het ontwikkelen van API&#39;s door de overheid en gebruik van deze API&#39;s buiten en binnen de overheid. Dit vanuit de gedachte dat we in een digitale samenleving eenvoudig met elkaar moeten kunnen samenwerken.  
 
@@ -176,11 +176,11 @@ In de NORA is sinds 2017 het Thema API&#39;s opgenomen en beschreven. De NORA be
 
 ### Overige belangrijke vermeldingen (zoals overlap met andere standaarden)  
 
-_OAuth (pas toe of leg uit standaard)_
+#### OAuth (pas toe of leg uit standaard)
 
 De API Design rules beschrijven zoals gezegd een set van richtlijnen om REST API&#39;s vorm te geven en toe te passen. Autorisatie van personen die API&#39;s raadplegen is nader uitgewerkt en beschreven in de OAuth standaard zoals gepubliceerd op [Logius-standaarden/OAuth-NL-profiel (github.com)](https://github.com/Logius-standaarden/OAuth-NL-profiel)).
 
-_Haal Centraal &amp; Common Ground (VNG)_
+#### Haal Centraal &amp; Common Ground (VNG)
 
 Hoe API&#39;s daadwerkelijk dienen te functioneren en welke generieke, specifieke en meta functies API&#39;s moeten omvatten wordt o.a. door VNG gestandaardiseerd in de Haal Centraal initiatieven.
 
@@ -194,7 +194,7 @@ Uitgesloten van alle bovenstaande zijn rechten verbonden aan de standaarden, pro
 
 ## Kwaliteitsbeleid en benchmarking  
 
-Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook 1.3 en 2.2.) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.
+Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook de paragraaf [Bomos](#Bomos) en [Governance](#Governance)) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.
 
 ## Adoptie en erkenning  
 
@@ -220,7 +220,7 @@ Om te voorkomen dat er verschillende lijsten met issues en verzoeken ontstaan, i
 
 Dit houdt concreet in dat RFC&#39;s die rechtstreeks bij Logius worden neergelegd, door Logius worden doorgespeeld aan de werkgroep ADR zodat daar de eerste beoordeling kan plaatsvinden.
 
-![ADR RFC Procesmodel](media/ADR_Governance-RFC_Process.png "ADR RFC Procesmodel")
+![ADR RFC Procesmodel](media/ADR_Governance-RFC_Process.svg "ADR RFC Procesmodel")
 > Figuur 5. ADR RFC Procesmodel
 
 ## Uitvoering en ontwikkeling (Wijzigingsproces)
@@ -234,23 +234,23 @@ De procedure van RCF naar daadwerkelijke wijziging ziet er als volgt uit:
 - Na vaststelling volgt publicatie van de nieuwe versie van standaard
 
 > N.B. Zolang het Centrum voor Standaarden nog geen predicaat &quot;Uitstekend beheer&quot; heeft ontvangen van Forum Standaardisatie, zullen nieuwe versies na vaststelling in het TO aan Forum Standaardisatie worden voorgelegd ter beoordeling.  
-> N.B.2. Het technisch overleg is momenteel samengevoegd met het structurele overleg van de werkgroep ADR van het Kennisplatform (zie 2.2.3)
+> N.B.2. Het technisch overleg is momenteel samengevoegd met het structurele overleg van de werkgroep ADR van het Kennisplatform
 
 Dit is schematisch weergegeven in het onderstaande ADR Governance model:  
 
-![ADR Governance model](media/ADR_Governance_model.png "ADR Governance model")
+![ADR Governance model](media/ADR_Governance_model.svg "ADR Governance model")
 > Figuur 6. ADR Governance model
 
 ## Status van de standaard
 
 Logius, Centrum voor standaarden onderscheid vier statussen die de ADR-standaard kan hebben:
 
-| **Afkorting**|**Status van de standaard**|**Beschrijving van de status** |
-| --- | --- | --- |
-| IO | In Ontwikkeling | Een nieuwe release van de standaard is &quot;In Ontwikkeling&quot; wanneer er met medeweten en medewerking van participanten aan gewerkt wordt en wanneer dit onderdeel of deze release nog niet voor de buitenwereld is gepubliceerd. |
-| IG | In Gebruik | Als een nieuwe release van de standaard gereed is, en is bestendigd door Forum Standaardisatie, stelt het Technisch Overleg de status &#39;In Gebruik&#39; vast. Door deze vaststelling worden gebruikers en ICT-leveranciers opgeroepen deze nieuwe release op te nemen in software en in gebruik te nemen. |
-| EO | Einde Ondersteuning | De standaardversie met de status &quot;Einde ondersteuning&quot; wordt niet meer ondersteund door de beheerder.<br>De kennis en informatie voor vragen en support is bij de beheerder niet langer beschikbaar. |
-| TG | Teruggetrokken | De standaard krijgt de status &quot;Teruggetrokken&quot; indien een release van de standaard niet bruikbaar blijkt (bijv. vanwege implementatieproblemen). |
+| **Afkorting** | **Status van de standaard** | **Beschrijving van de status**                                      |
+| :------------: | :----------------------------- | :-------------------------------------------------------------------  |
+| IO             | In Ontwikkeling                | Een nieuwe release van de standaard is &quot;In Ontwikkeling&quot; wanneer er met medeweten en medewerking van participanten aan gewerkt wordt en wanneer dit onderdeel of deze release nog niet voor de buitenwereld is gepubliceerd.                                                   |
+| IG             | In Gebruik                     | Als een nieuwe release van de standaard gereed is, en is bestendigd door Forum Standaardisatie, stelt het Technisch Overleg de status &#39;In Gebruik&#39; vast. Door deze vaststelling worden gebruikers en ICT-leveranciers opgeroepen deze nieuwe release op te nemen in software en in gebruik te nemen.                              |
+| EO             | Einde Ondersteuning            | De standaardversie met de status &quot;Einde ondersteuning&quot; wordt niet meer ondersteund door de beheerder.<br>De kennis en informatie voor vragen en support is bij de beheerder niet langer beschikbaar.                                                                       |
+| TG             | Teruggetrokken                 | De standaard krijgt de status &quot;Teruggetrokken&quot; indien een release van de standaard niet bruikbaar blijkt (bijv. vanwege implementatieproblemen).                                                             |
 
 > Figuur 7. Mogelijke statussen van de standaard
 
@@ -263,20 +263,20 @@ Alle documenten m.b.t. de standaard en het beheer van de standaard worden openba
 - De specificaties van de standaard
 - De voorlopige specificaties van de nieuwe versie van de standaard.
 
-Versie 1.0 van de ADR is gepubliceerd op:<br>
-[https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0](https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)
+Versie 1.0 van de ADR is gepubliceerd op:  
+[https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0](https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)  
 
-De laatste versie van de ADR is gepubliceerd op:<br>
-[https://publicatie.centrumvoorstandaarden.nl/api/adr/](https://publicatie.centrumvoorstandaarden.nl/api/adr/)
+De laatste versie van de ADR is gepubliceerd op:  
+[https://publicatie.centrumvoorstandaarden.nl/api/adr/](https://publicatie.centrumvoorstandaarden.nl/api/adr/)  
 
-De laatste concept versie van de standard is gepubliceerd op:<br>
-[https://logius-standaarden.github.io/API-Design-Rules/](https://logius-standaarden.github.io/API-Design-Rules/)
+De laatste concept versie van de standard is gepubliceerd op:  
+[https://logius-standaarden.github.io/API-Design-Rules/](https://logius-standaarden.github.io/API-Design-Rules/)  
 
-Het beheermodel is gepubliceerd op:<br>
-[Logius-standaarden/ADR-Beheermodel (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel)
+Het beheermodel is gepubliceerd op:  
+[Logius-standaarden/ADR-Beheermodel (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel)  
 
-De vergaderstukken zijn gepubliceerd op:<br>
-[Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken)
+De vergaderstukken zijn gepubliceerd op:  
+[Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken)  
 
 # Implementatieondersteuning
 
@@ -296,7 +296,7 @@ Logius biedt ondersteuning en advies via verschillende kanalen:
 
 ## Validatie &amp; Certificatie
 
-Certificatie van API&#39;s is op dit moment niet mogelijk. Wel is het mogelijk API&#39;s te valideren en te testen met behulp van de door VNG gerealiseerde tools welke beschikbaar zijn op:
+Certificatie van API&#39;s is op dit moment niet mogelijk. Wel is het mogelijk API&#39;s te valideren en te testen met behulp van de door VNG gerealiseerde tools welke beschikbaar zijn op:  
 - [Developer.overheid.nl](https://developer.overheid.nl/) &amp;
 
 - [API-test.nl](https://api-test.nl/)  
@@ -315,7 +315,7 @@ Tot slot is Logius promotor van de standaard. Zowel intern voor de toepassing va
 
 Als een nieuwe versie van de ADR-standaard de status "In Gebruik" heeft, worden verschillende zaken gepubliceerd.  
 Logius publiceert altijd de volledige specificatie van de standaard op een deel van zijn website. Daarnaast wordt een persbericht uitgegeven, waarin de publicatie van de nieuwe release van de standaard wordt aangekondigd.  
-Aanvullend publiceert Logius alle genoemde documentatie zoals genoemd bij 4.5.
+Aanvullend publiceert Logius alle genoemde documentatie zoals genoemd bij [Documentatie](# Documentatie).
 
 ## Klachtenafhandeling
 
