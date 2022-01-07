@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 26.4.0">
+<meta name="generator" content="ReSpec 28.1.0 Logius profile 20220106">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font:small Helvetica Neue,sans-serif,Droid Sans Fallback;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
@@ -54,8 +54,7 @@ dfn{cursor:pointer}
 25%{transform:scale(1.25,1.25);opacity:.75}
 100%{transform:scale(1,1)}
 }
-.hljs{background:0 0!important}
-a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
 dfn{font-weight:700}
 a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
 a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
@@ -97,83 +96,24 @@ details.respec-tests-details>li{padding-left:1em}
 a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
 h2,h3,h4,h5,h6{position:relative}
 aside.example .marker>a.self-link{color:inherit}
-h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
-h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}
+:is(h2,h3,h4,h5,h6)>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
+:is(h2,h3,h4,h5,h6)>a.self-link::before{content:"§";display:block}
 @media (max-width:767px){
 dd{margin-left:0}
-h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}
+:is(h2,h3,h4,h5,h6)>a.self-link{left:auto;top:auto}
 }
 @media print{
 .removeOnSave{display:none}
 }
 </style>
 <meta name="description" content="Dit document beschrijft het Beheermodel van de API Design Rules (ADR).">
-<link rel="canonical" href="https://www.w3.org/TR/adr-beheer/">
-<script type="application/ld+json">{
-  "@context": [
-    "http://schema.org",
-    {
-      "@vocab": "http://schema.org/",
-      "@language": "nl",
-      "w3p": "http://www.w3.org/2001/02pd/rec54#",
-      "foaf": "http://xmlns.com/foaf/0.1/",
-      "datePublished": {
-        "@type": "http://www.w3.org/2001/XMLSchema#date"
-      },
-      "inLanguage": {
-        "@language": null
-      },
-      "isBasedOn": {
-        "@type": "@id"
-      },
-      "license": {
-        "@type": "@id"
-      }
-    }
-  ],
-  "id": "https://www.w3.org/TR/adr-beheer/",
-  "type": [
-    "TechArticle"
-  ],
-  "name": "Beheermodel API Design Rules 1.0",
-  "inLanguage": "nl",
-  "license": "https://creativecommons.org/licenses/by-nd/4.0/legalcode.nl",
-  "datePublished": "2021-09-10",
-  "copyrightHolder": {
-    "name": "World Wide Web Consortium",
-    "url": "https://www.w3.org/"
-  },
-  "discussionUrl": "https://github.com/Logius-standaarden/ADR-Beheermodel/issues/",
-  "alternativeHeadline": "",
-  "description": "Dit document beschrijft het Beheermodel van de API Design Rules (ADR).",
-  "editor": [
-    {
-      "type": "Person",
-      "name": "Maarten van Veen",
-      "worksFor": {
-        "name": "Logius",
-        "url": "https://www.logius.nl"
-      }
-    },
-    {
-      "type": "Person",
-      "name": "Martin van der Plas",
-      "worksFor": {
-        "name": "Logius",
-        "url": "https://www.logius.nl"
-      }
-    },
-    {
-      "type": "Person",
-      "name": "Peter Haasnoot",
-      "worksFor": {
-        "name": "Logius",
-        "url": "https://www.logius.nl"
-      }
-    }
-  ],
-  "citation": []
-}</script>
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
 <script id="initialUserConfig" type="application/json">{
   "specStatus": "DEF",
   "specType": "ST",
@@ -320,14 +260,16 @@ h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:
 <link rel="stylesheet" href="https://publicatie.centrumvoorstandaarden.nl/respec/style/LS-DEF.css"></head>
 
 
-<body class="h-entry informative"><div class="head">
-    <a class="logo" href="https://www.logius.nl/standaarden"><img id="Logius" alt="Logius" width="44" height="77" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg"></a> <h1 id="title" class="title">Beheermodel API Design Rules 1.0</h1>
+<body class="h-entry informative toc-inline"><div class="head">
+    <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://publicatie.centrumvoorstandaarden.nl/respec/style/logos/figure-logius.svg" width="44">
+  </a> <h1 id="title" class="title">Beheermodel API Design Rules 1.0</h1>
     
     <h2>
       Logius Standaard<br>
       Vastgestelde versie
       <time class="dt-published" datetime="2021-09-10">10 september 2021</time>
     </h2>
+	<a lang="nl" href="https://publicatie.centrumvoorstandaarden.nl/">Overzicht standaarden</a>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
               <a class="u-url status" href="https://publicatie.centrumvoorstandaarden.nl/api/adr-beheer/1.0">https://publicatie.centrumvoorstandaarden.nl/api/adr-beheer/1.0</a>
@@ -341,13 +283,13 @@ h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:
       
       
       <dt>Redacteurs:</dt>
-      <dd class="p-author h-card vcard"><span class="p-name fn">Maarten van Veen</span>
-            (<a class="p-org org h-org h-card" href="https://www.logius.nl">Logius</a>)
-          </dd><dd class="p-author h-card vcard"><span class="p-name fn">Martin van der Plas</span>
-            (<a class="p-org org h-org h-card" href="https://www.logius.nl">Logius</a>)
-          </dd><dd class="p-author h-card vcard"><span class="p-name fn">Peter Haasnoot</span>
-            (<a class="p-org org h-org h-card" href="https://www.logius.nl">Logius</a>)
-          </dd>
+      <dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Maarten van Veen</span> (<a class="p-org org h-org" href="https://www.logius.nl">Logius</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Martin van der Plas</span> (<a class="p-org org h-org" href="https://www.logius.nl">Logius</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Peter Haasnoot</span> (<a class="p-org org h-org" href="https://www.logius.nl">Logius</a>)
+  </dd>
       
       
       <dt>Doe mee:</dt><dd>
@@ -362,59 +304,58 @@ h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:
     </dl>
     
     
-    <p>
+    <p lang="en">
           This document is also available in this non-normative format:
           <a rel="alternate" href="ADR-Beheermodel.pdf">pdf</a>
         </p>
-    <p class="copyright">
+    <p class="copyright" lang="en">
           This document is licensed under a
           <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.
         </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het Beheermodel van de API Design Rules (ADR).</p></section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>
-    Dit is de definitieve versie van de  standaard. Wijzigingen naar
-    aanleiding van consultaties zijn doorgevoerd.
-  </p><p>Het OBDO heeft op advies van het Forum Standaardisatie deze versie vastgesteld.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.1 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#de-rest-api-design-rules-ofwel-adr-standaard"><bdi class="secno">1.2 </bdi>De REST-API Design Rules ofwel ADR-standaard</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#nut"><bdi class="secno">1.2.1 </bdi>Nut</a></li><li class="tocline"><a class="tocxref" href="#werking"><bdi class="secno">1.2.2 </bdi>Werking</a></li><li class="tocline"><a class="tocxref" href="#status"><bdi class="secno">1.2.3 </bdi>Status</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bomos"><bdi class="secno">1.3 </bdi>Bomos</a></li></ol></li><li class="tocline"><a class="tocxref" href="#strategie"><bdi class="secno">2. </bdi>Strategie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visie"><bdi class="secno">2.1 </bdi>Visie</a></li><li class="tocline"><a class="tocxref" href="#governance"><bdi class="secno">2.2 </bdi>Governance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#governancestructuur"><bdi class="secno">2.2.1 </bdi>Governancestructuur</a></li><li class="tocline"><a class="tocxref" href="#besluitvorming"><bdi class="secno">2.2.2 </bdi>Besluitvorming</a></li><li class="tocline"><a class="tocxref" href="#deelname"><bdi class="secno">2.2.3 </bdi>Deelname</a></li></ol></li><li class="tocline"><a class="tocxref" href="#financering"><bdi class="secno">2.3 </bdi>Financering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tactiek"><bdi class="secno">3. </bdi>Tactiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#community"><bdi class="secno">3.1 </bdi>Community</a></li><li class="tocline"><a class="tocxref" href="#architectuur"><bdi class="secno">3.2 </bdi>Architectuur</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#internationale-europese-en-nationale-standaardisatiegemeenschap"><bdi class="secno">3.2.1 </bdi>Internationale, Europese en nationale standaardisatiegemeenschap</a></li><li class="tocline"><a class="tocxref" href="#samenwerking-met-andere-beheerorganisaties"><bdi class="secno">3.2.2 </bdi>Samenwerking met andere beheerorganisaties</a></li><li class="tocline"><a class="tocxref" href="#nederlandse-overheid-referentie-architectuur-nora"><bdi class="secno">3.2.3 </bdi>Nederlandse Overheid Referentie Architectuur (NORA)</a></li><li class="tocline"><a class="tocxref" href="#overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"><bdi class="secno">3.2.4 </bdi>Overige belangrijke vermeldingen (zoals overlap met andere standaarden)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#rechtenbeleid"><bdi class="secno">3.3 </bdi>Rechtenbeleid</a></li><li class="tocline"><a class="tocxref" href="#kwaliteitsbeleid-en-benchmarking"><bdi class="secno">3.4 </bdi>Kwaliteitsbeleid en benchmarking</a></li><li class="tocline"><a class="tocxref" href="#adoptie-en-erkenning"><bdi class="secno">3.5 </bdi>Adoptie en erkenning</a></li></ol></li><li class="tocline"><a class="tocxref" href="#operationeel"><bdi class="secno">4. </bdi>Operationeel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#initiatie"><bdi class="secno">4.1 </bdi>Initiatie</a></li><li class="tocline"><a class="tocxref" href="#wensen-en-eisen"><bdi class="secno">4.2 </bdi>Wensen en Eisen</a></li><li class="tocline"><a class="tocxref" href="#uitvoering-en-ontwikkeling-wijzigingsproces"><bdi class="secno">4.3 </bdi>Uitvoering en ontwikkeling (Wijzigingsproces)</a></li><li class="tocline"><a class="tocxref" href="#status-van-de-standaard"><bdi class="secno">4.4 </bdi>Status van de standaard</a></li><li class="tocline"><a class="tocxref" href="#documentatie"><bdi class="secno">4.5 </bdi>Documentatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#implementatieondersteuning"><bdi class="secno">5. </bdi>Implementatieondersteuning</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#opleiding-en-advies"><bdi class="secno">5.1 </bdi>Opleiding en advies</a></li><li class="tocline"><a class="tocxref" href="#helpdesk"><bdi class="secno">5.2 </bdi>Helpdesk</a></li><li class="tocline"><a class="tocxref" href="#validatie-certificatie"><bdi class="secno">5.3 </bdi>Validatie &amp; Certificatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#communicatie"><bdi class="secno">6. </bdi>Communicatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#promotie"><bdi class="secno">6.1 </bdi>Promotie</a></li><li class="tocline"><a class="tocxref" href="#publicatie"><bdi class="secno">6.2 </bdi>Publicatie</a></li><li class="tocline"><a class="tocxref" href="#klachtenafhandeling"><bdi class="secno">6.3 </bdi>Klachtenafhandeling</a></li></ol></li></ol></nav>
+  <section id="abstract" data-format="markdown" class="introductory"><h2 id="samenvatting">Samenvatting<a class="self-link" href="#abstract" aria-label="Permalink for Section"></a></h2><p>Dit document beschrijft het Beheermodel van de API Design Rules (ADR).</p></section>
+  <section id="sotd" class="introductory"><h2 id="status-van-dit-document">Status van dit document<a class="self-link" href="#sotd" aria-label="Permalink for Section"></a></h2>Dit is de definitieve versie van de  standaard. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.<p>Het OBDO heeft op advies van het Forum Standaardisatie deze versie vastgesteld.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">1.1 </bdi>Leeswijzer</a></li><li class="tocline"><a class="tocxref" href="#de-rest-api-design-rules-ofwel-adr-standaard"><bdi class="secno">1.2 </bdi>De REST-API Design Rules ofwel ADR-standaard</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#nut"><bdi class="secno">1.2.1 </bdi>Nut</a></li><li class="tocline"><a class="tocxref" href="#werking"><bdi class="secno">1.2.2 </bdi>Werking</a></li><li class="tocline"><a class="tocxref" href="#status"><bdi class="secno">1.2.3 </bdi>Status</a></li></ol></li><li class="tocline"><a class="tocxref" href="#bomos"><bdi class="secno">1.3 </bdi>Bomos</a></li></ol></li><li class="tocline"><a class="tocxref" href="#strategie"><bdi class="secno">2. </bdi>Strategie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visie"><bdi class="secno">2.1 </bdi>Visie</a></li><li class="tocline"><a class="tocxref" href="#governance"><bdi class="secno">2.2 </bdi>Governance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#governancestructuur"><bdi class="secno">2.2.1 </bdi>Governancestructuur</a></li><li class="tocline"><a class="tocxref" href="#besluitvorming"><bdi class="secno">2.2.2 </bdi>Besluitvorming</a></li><li class="tocline"><a class="tocxref" href="#deelname"><bdi class="secno">2.2.3 </bdi>Deelname</a></li></ol></li><li class="tocline"><a class="tocxref" href="#financering"><bdi class="secno">2.3 </bdi>Financering</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tactiek"><bdi class="secno">3. </bdi>Tactiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#community"><bdi class="secno">3.1 </bdi>Community</a></li><li class="tocline"><a class="tocxref" href="#architectuur"><bdi class="secno">3.2 </bdi>Architectuur</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#internationale-europese-en-nationale-standaardisatiegemeenschap"><bdi class="secno">3.2.1 </bdi>Internationale, Europese en nationale standaardisatiegemeenschap</a></li><li class="tocline"><a class="tocxref" href="#samenwerking-met-andere-beheerorganisaties"><bdi class="secno">3.2.2 </bdi>Samenwerking met andere beheerorganisaties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#kennisplatform-api-s"><bdi class="secno">3.2.2.1 </bdi>Kennisplatform API's</a></li></ol></li><li class="tocline"><a class="tocxref" href="#nederlandse-overheid-referentie-architectuur-nora"><bdi class="secno">3.2.3 </bdi>Nederlandse Overheid Referentie Architectuur (NORA)</a></li><li class="tocline"><a class="tocxref" href="#overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"><bdi class="secno">3.2.4 </bdi>Overige belangrijke vermeldingen (zoals overlap met andere standaarden)</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#oauth-pas-toe-of-leg-uit-standaard"><bdi class="secno">3.2.4.1 </bdi>OAuth (pas toe of leg uit standaard)</a></li><li class="tocline"><a class="tocxref" href="#haal-centraal-common-ground-vng"><bdi class="secno">3.2.4.2 </bdi>Haal Centraal &amp; Common Ground (VNG)</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#rechtenbeleid"><bdi class="secno">3.3 </bdi>Rechtenbeleid</a></li><li class="tocline"><a class="tocxref" href="#kwaliteitsbeleid-en-benchmarking"><bdi class="secno">3.4 </bdi>Kwaliteitsbeleid en benchmarking</a></li><li class="tocline"><a class="tocxref" href="#adoptie-en-erkenning"><bdi class="secno">3.5 </bdi>Adoptie en erkenning</a></li></ol></li><li class="tocline"><a class="tocxref" href="#operationeel"><bdi class="secno">4. </bdi>Operationeel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#initiatie"><bdi class="secno">4.1 </bdi>Initiatie</a></li><li class="tocline"><a class="tocxref" href="#wensen-en-eisen"><bdi class="secno">4.2 </bdi>Wensen en Eisen</a></li><li class="tocline"><a class="tocxref" href="#uitvoering-en-ontwikkeling-wijzigingsproces"><bdi class="secno">4.3 </bdi>Uitvoering en ontwikkeling (Wijzigingsproces)</a></li><li class="tocline"><a class="tocxref" href="#status-van-de-standaard"><bdi class="secno">4.4 </bdi>Status van de standaard</a></li><li class="tocline"><a class="tocxref" href="#documentatie"><bdi class="secno">4.5 </bdi>Documentatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#implementatieondersteuning"><bdi class="secno">5. </bdi>Implementatieondersteuning</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#opleiding-en-advies"><bdi class="secno">5.1 </bdi>Opleiding en advies</a></li><li class="tocline"><a class="tocxref" href="#helpdesk"><bdi class="secno">5.2 </bdi>Helpdesk</a></li><li class="tocline"><a class="tocxref" href="#validatie-certificatie"><bdi class="secno">5.3 </bdi>Validatie &amp; Certificatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#communicatie"><bdi class="secno">6. </bdi>Communicatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#promotie"><bdi class="secno">6.1 </bdi>Promotie</a></li><li class="tocline"><a class="tocxref" href="#publicatie"><bdi class="secno">6.2 </bdi>Publicatie</a></li><li class="tocline"><a class="tocxref" href="#klachtenafhandeling"><bdi class="secno">6.3 </bdi>Klachtenafhandeling</a></li></ol></li></ol></nav>
   
   
   
   
-  <section data-format="markdown" id="inleiding"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding<a class="self-link" aria-label="§" href="#inleiding"></a></h2><section id="leeswijzer"><h3 id="x1-1-leeswijzer"><bdi class="secno">1.1 </bdi>Leeswijzer<a class="self-link" aria-label="§" href="#leeswijzer"></a></h3><p>Dit document beschrijft hoe Logius, afdeling Standaarden (hierna: Logius) de REST-API Design Rules standaard beheert en hoe de bijbehorende governance is ingericht. In dit document wordt verder ADR gebruikt als afkorting voor de (REST)-API Design Rules.</p></section><section id="de-rest-api-design-rules-ofwel-adr-standaard"><h3 id="x1-2-de-rest-api-design-rules-ofwel-adr-standaard"><bdi class="secno">1.2 </bdi>De REST-API Design Rules ofwel ADR-standaard<a class="self-link" aria-label="§" href="#de-rest-api-design-rules-ofwel-adr-standaard"></a></h3><p>De ADR-standaard omvat een set van normatieve ontwerpafspraken voor het structureren en documenteren van REST-API’s. De standaard heeft tot doel om betere, uniforme en ontwikkelaar vriendelijke API’s te ontwikkelen die makkelijk te implementeren zijn.
+  
+<section data-format="markdown" id="inleiding"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding<a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></h2><section id="leeswijzer"><h3 id="x1-1-leeswijzer"><bdi class="secno">1.1 </bdi>Leeswijzer<a class="self-link" href="#leeswijzer" aria-label="Permalink for Section 1.1"></a></h3><p>Dit document beschrijft hoe Logius, afdeling Standaarden (hierna: Logius) de REST-API Design Rules standaard beheert en hoe de bijbehorende governance is ingericht. In dit document wordt verder ADR gebruikt als afkorting voor de (REST)-API Design Rules.</p></section><section id="de-rest-api-design-rules-ofwel-adr-standaard"><h3 id="x1-2-de-rest-api-design-rules-ofwel-adr-standaard"><bdi class="secno">1.2 </bdi>De REST-API Design Rules ofwel ADR-standaard<a class="self-link" href="#de-rest-api-design-rules-ofwel-adr-standaard" aria-label="Permalink for Section 1.2"></a></h3><p>De ADR-standaard omvat een set van normatieve ontwerpafspraken voor het structureren en documenteren van REST-API’s. De standaard heeft tot doel om betere, uniforme en ontwikkelaar vriendelijke API’s te ontwikkelen die makkelijk te implementeren zijn.
 De set van afspraken bestaat uit breed toepasbare en ondubbelzinnige richtlijnen. Deze helpen organisaties die nieuwe API’s ontwikkelen voor Nederlandse overheden (Rijk, provincies, gemeenten en waterschappen) en instellingen uit de (semi-) publieke sector.
-Het Nut en de werking van de standaard zijn reeds goed beschreven door het Forum Standaardisatie en voor de eenduidigheid hieronder integraal opgenomen <a href="https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules">zie link</a>:</p><section id="nut"><h4 id="x1-2-1-nut"><bdi class="secno">1.2.1 </bdi>Nut<a class="self-link" aria-label="§" href="#nut"></a></h4><blockquote>
+Het Nut en de werking van de standaard zijn reeds goed beschreven door het Forum Standaardisatie en voor de eenduidigheid hieronder integraal opgenomen <a href="https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules">zie link</a>:</p><section id="nut"><h4 id="x1-2-1-nut"><bdi class="secno">1.2.1 </bdi>Nut<a class="self-link" href="#nut" aria-label="Permalink for Section 1.2.1"></a></h4><blockquote>
 <p>De overheid ontsluit gegevens en applicaties steeds vaker met REST-API's. Voorbeelden hiervan zijn te zien op de website <a href="https://developer.overheid.nl">developer.overheid.nl</a>, <a href="https://commonground.nl">in Common Ground</a>, <a href="https://www.vngrealisatie.nl/producten/haal-centraal">Haal Centraal</a> en <a href="https://aandeslagmetdeomgevingswet.nl">het Digitaal Stelsel Omgevingswet</a>.<br>Representational state transfer (REST) is een ontwerpprincipe dat wereldwijd veel gebruikt wordt voor het bouwen van programmeerinterfaces over het web (API's). REST is geen standaard maar een ontwerpprincipe, en laat nog veel vrijheid in het structureren van API's.<br>De standaard REST-API Design Rules geeft een verzameling basisregels voor structuur en naamgeving waarmee de overheid op een uniforme en eenduidige manier REST-API's aanbiedt. Dit maakt het voor ontwikkelaars gemakkelijker om betrouwbare applicaties met te ontwikkelen met API's van de overheid.
 <a href="https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules">Bron: Forum standaardisatie</a></p>
-</blockquote></section><section id="werking"><h4 id="x1-2-2-werking"><bdi class="secno">1.2.2 </bdi>Werking<a class="self-link" aria-label="§" href="#werking"></a></h4><blockquote>
+</blockquote></section><section id="werking"><h4 id="x1-2-2-werking"><bdi class="secno">1.2.2 </bdi>Werking<a class="self-link" href="#werking" aria-label="Permalink for Section 1.2.2"></a></h4><blockquote>
 <p>Een application programming interface (API) is een gestructureerd en gedocumenteerd koppelvlak voor communicatie tussen applicaties. Zo lang er computers zijn, bestaan er API's en worden er verschillende API technologieën gebruikt. In de laatste 10 jaar heeft Representational state transfer (REST) zich ontwikkeld tot een bepalend principe voor het realiseren van API's.  Zogenaamde ‘REST-API's’ doen voor applicaties wat websites voor mensen doen. Websites presenteren informatie aan mensen, REST-API's maken applicaties en gegevens over het Internet beschikbaar voor andere applicaties. De technologie achter websites en REST-API's heeft daarom veel gemeen.<br>De overheid gebruikt REST-API's voor koppelingen met andere overheden, bedrijven en indirect ook met burgers, bijvoorbeeld via mobiele apps en webapps die aangeboden worden door bedrijven of overheden zelf. Ontwikkelaars kunnen deze REST-API's bevragen vanuit de gangbare programmeertalen en frameworks zoals Python, Java, Microsoft C#, PHP.<br><a href="https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules">Bron: Forum standaardisatie</a></p>
-</blockquote></section><section id="status"><h4 id="x1-2-3-status"><bdi class="secno">1.2.3 </bdi>Status<a class="self-link" aria-label="§" href="#status"></a></h4><p>De actuele versie van de ADR-standaard is 1.0. Deze versie is op 09-07-2020 door het OBDO vastgesteld op advies van het Forum Standaardisatie.<br>De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt kort gezegd in dat Nederlandse overheden en instellingen uit de (semi) publieke sector verplicht zijn deze standaard toe te passen op het moment dat zij REST API’s gaan gebruiken voor het ontsluiten van overheidsinformatie en/of functionaliteit. (Zie voor meer informatie over het <a href="https://www.forumstandaardisatie.nl/node/229">pas toe of leg uit beleid.</a>)  </p><ul>
+</blockquote></section><section id="status"><h4 id="x1-2-3-status"><bdi class="secno">1.2.3 </bdi>Status<a class="self-link" href="#status" aria-label="Permalink for Section 1.2.3"></a></h4><p>De actuele versie van de ADR-standaard is 1.0. Deze versie is op 09-07-2020 door het OBDO vastgesteld op advies van het Forum Standaardisatie.<br>De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt kort gezegd in dat Nederlandse overheden en instellingen uit de (semi) publieke sector verplicht zijn deze standaard toe te passen op het moment dat zij REST API’s gaan gebruiken voor het ontsluiten van overheidsinformatie en/of functionaliteit. (Zie voor meer informatie over het <a href="https://www.forumstandaardisatie.nl/node/229">pas toe of leg uit beleid.</a>)  </p><ul>
 <li>De verplichting is gepubliceerd door het Forum Standaardisatie op:<br>(<a href="https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules">https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules</a>)  </li>
 <li>Versie 1.0 van de ADR is gepubliceerd op:<br>(<a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0">https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0</a>)  </li>
 <li>De laatste versie van de ADR is gepubliceerd op:<br>(<a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/">https://publicatie.centrumvoorstandaarden.nl/api/adr/</a>)  </li>
-<li>De laatste concept versie van de standard is gepubliceerd op:<br>(<a href="https://logius-standaarden.github.io/API-Design-Rules/">https://logius-standaarden.github.io/API-Design-Rules/</a>) </li>
-</ul></section></section><section id="bomos"><h3 id="x1-3-bomos"><bdi class="secno">1.3 </bdi>Bomos<a class="self-link" aria-label="§" href="#bomos"></a></h3><p>Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor Open Standaarden (BOMOS). Ook het beheer van de ADR-standaard is op basis van BOMOS ingericht. Voor de beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar het beheerplan van de ADR-standaard is afgeleid.  </p><p><figure id="Bomos_model"><img src="media/Bomos_model.png" alt="Bomos model" title="Bomos model" height="381" width="613"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Bomos model</span></figcaption></figure></p><blockquote>
+<li>De laatste concept versie van de standard is gepubliceerd op:<br>(<a href="https://logius-standaarden.github.io/API-Design-Rules/">https://logius-standaarden.github.io/API-Design-Rules/</a>)</li>
+</ul></section></section><section id="bomos"><h3 id="x1-3-bomos"><bdi class="secno">1.3 </bdi>Bomos<a class="self-link" href="#bomos" aria-label="Permalink for Section 1.3"></a></h3><p>Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor Open Standaarden (BOMOS). Ook het beheer van de ADR-standaard is op basis van BOMOS ingericht. Voor de beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar het beheerplan van de ADR-standaard is afgeleid.  </p><p><figure id="fig-bomos-model"><img src="media/Bomos_model_v2.svg" alt="Bomos model" title="Bomos model"><figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">Bomos model</span></figcaption></figure></p><blockquote>
 <p>Figuur 1. Bomos model</p>
 </blockquote><p>Voor meer informatie over BOMOS zie ook <a href="https://beslisboom.forumstandaardisatie.nl/thema/ontwikkelen-en-beheren-van-open-standaarden">de beslisboom van het forumstandaardisatie</a>.<br>BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan bevinden. Deze fase bepaalt mede op welke beheeronderdelen meer of minder wordt ingezet. De verschillende fases zijn:  </p><ol>
-<li>   Creatie/ontwikkeling</li>
-<li>   Introductie</li>
-<li>   Implementatie/groei</li>
-<li>   Volwaardige toepassing</li>
-<li>   Uitfaseren</li>
-</ol><p><figure id="Bomos_levenscyclus"><img src="media/Bomos_levenscyclus.png" alt="Bomos_levenscyclus" title="Bomos levenscyclus" height="440" width="755"><figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title">Bomos_levenscyclus</span></figcaption></figure></p><blockquote>
+<li>Creatie/ontwikkeling</li>
+<li>Introductie</li>
+<li>Implementatie/groei</li>
+<li>Volwaardige toepassing</li>
+<li>Uitfaseren</li>
+</ol><p><figure id="fig-bomos-levenscyclus"><img src="media/Bomos_levenscyclus_v2.svg" alt="Bomos_levenscyclus" title="Bomos levenscyclus"><figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title">Bomos levenscyclus</span></figcaption></figure></p><blockquote>
 <p>Figuur 2. Bomos levenscyclus</p>
 </blockquote><p>De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie van de standaard is 15-10-2019 aangemeld bij het Forum Standaardisatie en op 09-07-2020 op de lijst van verplichte standaarden opgenomen. Vanuit het Kennisplatform API’s en Logius Centrum voor Standaarden wordt momenteel nog volop aan de API Design Rules gewerkt en de verwachting is dat de standaard nog de nodige ontwikkelingen door gaat maken. Daarnaast komt het gebruik van de API Design Rules pas net op stoom, waardoor er van een volwaardige toepassing bij de beoogde doelgroep nog geen sprake is.  </p><p>Dit heeft gevolgen voor het beheer van de standaard. Naast de groei in de aantallen toepassingen van de standaard is ook relevant dat eerst nog minor en major wijzigingen in de standaard op een correcte manier worden doorgevoerd en er veel informatie beschikbaar is die gebruikers helpt bij de implementatie van de standaard. Daarom is er komende tijd vooral aandacht voor:</p><ul>
-<li>   Het in de praktijk bestendigen van het beheer van de standaard;  </li>
-<li>   Gestaag doorontwikkeling van de specificaties zelf;  </li>
-<li>   Bouwen en aanbieden ondersteunende tooling;  </li>
-<li>   Groei in het aantal toepassingen van de standaard;  </li>
-<li>   Monitoring van het gebruik van de standaard;  </li>
-<li>   Groei van de community rond de standaard.</li>
-</ul></section></section><section data-format="markdown" id="strategie"><h2 id="x2-strategie"><bdi class="secno">2. </bdi>Strategie<a class="self-link" aria-label="§" href="#strategie"></a></h2><p>De strategische activiteiten van BOMOS bestaan uit de onderdelen Visie, Govenance en Financiering. Deze onderdelen en hun toepassing op het beheer van de ARD-standaard worden hieronder beschreven.</p><section id="visie"><h3 id="x2-1-visie"><bdi class="secno">2.1 </bdi>Visie<a class="self-link" aria-label="§" href="#visie"></a></h3><p>Met de API Design Rules standaard wil de Nederlandse overheid interoperabiliteit bevorderen. Dit komt erop neer dat overheden dezelfde standaard in vergelijkbare situaties toepassen. Dit maakt uiteindelijk dat componenten en systemen onderling effectief gegevens uit kunnen wisselen. Zowel horizontaal in één voorziening binnen één situatie als vertikaal tussen voorzieningen in verschillende situaties en tussen organisaties. Deze doelstelling wordt onderschreven door een breed scala aan partijen die deelnemen aan het API Kennisplatform, waar de ontwikkeling van de standaard zijn oorsprong heeft, en is bestendigd door Forum Standaardisatie en het OverheidsBrede Beleidsoverhed Digitale Overheid (OBDO), die de ADR-standaard hebben opgenomen op de zogenaamde ‘pas toe of leg uit’-lijst met andere standaarden die interoperabiliteit bevorderen <a href="https://www.forumstandaardisatie.nl/basisinformatie">zie ook de basisinformatie van het Forum Standaardisatie</a>.  </p></section><section id="governance"><h3 id="x2-2-governance"><bdi class="secno">2.2 </bdi>Governance<a class="self-link" aria-label="§" href="#governance"></a></h3><section id="governancestructuur"><h4 id="x2-2-1-governancestructuur"><bdi class="secno">2.2.1 </bdi>Governancestructuur<a class="self-link" aria-label="§" href="#governancestructuur"></a></h4><p>Bij het beheer van een open standaard hoort een open governance en een open procedure voor belanghebbenden om te kunnen participeren in het beheer. Logius, neemt hierin de rol van onafhankelijke, duurzame beheerpartij en facilitator. Bij het beheer van de ADR worden verschillende gremia onderscheiden die gezamenlijk invulling geven aan de governance op de standaard:  </p><ol>
+<li>Het in de praktijk bestendigen van het beheer van de standaard;  </li>
+<li>Gestaag doorontwikkeling van de specificaties zelf;  </li>
+<li>Bouwen en aanbieden ondersteunende tooling;  </li>
+<li>Groei in het aantal toepassingen van de standaard;  </li>
+<li>Monitoring van het gebruik van de standaard;  </li>
+<li>Groei van de community rond de standaard.</li>
+</ul></section></section>
+<section data-format="markdown" id="strategie"><h2 id="x2-strategie"><bdi class="secno">2. </bdi>Strategie<a class="self-link" href="#strategie" aria-label="Permalink for Section 2."></a></h2><p>De strategische activiteiten van BOMOS bestaan uit de onderdelen Visie, Govenance en Financiering. Deze onderdelen en hun toepassing op het beheer van de ARD-standaard worden hieronder beschreven.</p><section id="visie"><h3 id="x2-1-visie"><bdi class="secno">2.1 </bdi>Visie<a class="self-link" href="#visie" aria-label="Permalink for Section 2.1"></a></h3><p>Met de API Design Rules standaard wil de Nederlandse overheid interoperabiliteit bevorderen. Dit komt erop neer dat overheden dezelfde standaard in vergelijkbare situaties toepassen. Dit maakt uiteindelijk dat componenten en systemen onderling effectief gegevens uit kunnen wisselen. Zowel horizontaal in één voorziening binnen één situatie als vertikaal tussen voorzieningen in verschillende situaties en tussen organisaties. Deze doelstelling wordt onderschreven door een breed scala aan partijen die deelnemen aan het API Kennisplatform, waar de ontwikkeling van de standaard zijn oorsprong heeft, en is bestendigd door Forum Standaardisatie en het OverheidsBrede Beleidsoverhed Digitale Overheid (OBDO), die de ADR-standaard hebben opgenomen op de zogenaamde ‘pas toe of leg uit’-lijst met andere standaarden die interoperabiliteit bevorderen <a href="https://www.forumstandaardisatie.nl/basisinformatie">zie ook de basisinformatie van het Forum Standaardisatie</a>.  </p></section><section id="governance"><h3 id="x2-2-governance"><bdi class="secno">2.2 </bdi>Governance<a class="self-link" href="#governance" aria-label="Permalink for Section 2.2"></a></h3><section id="governancestructuur"><h4 id="x2-2-1-governancestructuur"><bdi class="secno">2.2.1 </bdi>Governancestructuur<a class="self-link" href="#governancestructuur" aria-label="Permalink for Section 2.2.1"></a></h4><p>Bij het beheer van een open standaard hoort een open governance en een open procedure voor belanghebbenden om te kunnen participeren in het beheer. Logius, neemt hierin de rol van onafhankelijke, duurzame beheerpartij en facilitator. Bij het beheer van de ADR worden verschillende gremia onderscheiden die gezamenlijk invulling geven aan de governance op de standaard:  </p><ol>
 <li>API-community (Interesse Groep - IG)<br>Dit is het meest operationele gremium waarin iedere belangstellende/belanghebbende vragen kan stellen over de ADR-standaard en suggesties kan doen voor de doorontwikkeling van de standaard. Dergelijke vragen en suggesties worden door Logius verzameld en voorgelegd aan het Technisch Overleg en als issue geregistreerd bij de werkgroep ADR van het kennisplatform API’s.  </li>
 <li>Technisch Overleg (Technische Architectuur Groep – TAG)<br>Het Technisch Overleg is een periodieke bijeenkomst van de Technische Architectuur Groep (TAG) waarbij de vragen en doorontwikkelwensen m.b.t. de ADR worden doorgenomen, geprioriteerd en worden uitgewerkt. Daarnaast wordt door de leden de releaseplanning en de roadmap opgesteld. Deelname aan de TAG is vrij voor eenieder die een belang heeft bij de standaard (overheid, wetenschap en markt)  </li>
 <li>Tactisch overleg ADR<br>Dit gremium is verantwoordelijk voor het vaststellen van de doorontwikkel-roadmap, het vaststellen van minor releases van de standaard en dient als het voorportaal van het strategisch/besluitvormende gremium: het OBDO.  </li>
-<li>Het Overheidsbrede Beleidsoverleg Digitale Overheid (OBDO)<br>Dit is het hoogst ambtelijke gremium dat besluit over major releases van de standaard, het beheermodel van de standaard en externe publicaties over releases en van het standaardenbeleid. Op dit moment wordt het OBDO louter ‘gevoed’ door Forum Standaardisatie en is de focus voornamelijk het bestendigen van major releases van de standaard. Op het moment dat het tactische gremium is ingevuld, zal het OBDO waarschijnlijk een breder scala aan onderwerpen langs krijgen ter bestendiging.  </li>
+<li>Het Overheidsbrede Beleidsoverleg Digitale Overheid (OBDO)<br>Dit is het hoogst ambtelijke gremium dat besluit over major releases van de standaard, het beheermodel van de standaard en externe publicaties over releases en van het standaardenbeleid. Op dit moment wordt het OBDO louter ‘gevoed’ door Forum Standaardisatie en is de focus voornamelijk het bestendigen van major releases van de standaard. Op het moment dat het tactische gremium is ingevuld, zal het OBDO waarschijnlijk een breder scala aan onderwerpen langs krijgen ter bestendiging.</li>
 </ol><blockquote>
 <p><em>N.B. Het tactisch overleg ADR gremium is momenteel nog niet actief, waardoor Logius bij wijzigingen aan de standaard, de nieuwe versie voorlegt aan het Forum Standaardisatie, voor het borgen van een zo breed mogelijke afstemming met verschillende belanghebbenden.</em><br><em>N.B. De definitieve invulling van de tactische en strategische laag (OBDO) wordt eind 2021 duidelijk.</em>  </p>
 </blockquote><p>In tabelvorm:  </p><table class="dkkvs">
@@ -452,18 +393,19 @@ Het Nut en de werking van de standaard zijn reeds goed beschreven door het Forum
 </tr>
 </tbody></table><blockquote>
 <p>Figuur 3. Overheidsbreed Beleidsoverleg Digitale Overheid</p>
-</blockquote></section><section id="besluitvorming"><h4 id="x2-2-2-besluitvorming"><bdi class="secno">2.2.2 </bdi>Besluitvorming<a class="self-link" aria-label="§" href="#besluitvorming"></a></h4><p>In alle overleggremia vindt besluitvorming plaats op basis van consensus. Mocht consensus niet mogelijk zijn, dan gaat het vraagstuk met een weergave van de verschillende standpunten door naar het eerstvolgend-hoger gelegen-gremium. Indien in het hoogste gremium (het OBDO) geen consensus bereikt kan worden, heeft de voorzitter van het OBDO (min. BZK) de beslissende stem.  </p></section><section id="deelname"><h4 id="x2-2-3-deelname"><bdi class="secno">2.2.3 </bdi>Deelname<a class="self-link" aria-label="§" href="#deelname"></a></h4><p>Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participatie van de verschillende belanghebbenden. Belanghebbenden kunnen op vier manieren participeren aan het wijzigings- en besluitvormingsproces:  </p><ol>
+</blockquote></section><section id="besluitvorming"><h4 id="x2-2-2-besluitvorming"><bdi class="secno">2.2.2 </bdi>Besluitvorming<a class="self-link" href="#besluitvorming" aria-label="Permalink for Section 2.2.2"></a></h4><p>In alle overleggremia vindt besluitvorming plaats op basis van consensus. Mocht consensus niet mogelijk zijn, dan gaat het vraagstuk met een weergave van de verschillende standpunten door naar het eerstvolgend-hoger gelegen-gremium. Indien in het hoogste gremium (het OBDO) geen consensus bereikt kan worden, heeft de voorzitter van het OBDO (min. BZK) de beslissende stem.  </p></section><section id="deelname"><h4 id="x2-2-3-deelname"><bdi class="secno">2.2.3 </bdi>Deelname<a class="self-link" href="#deelname" aria-label="Permalink for Section 2.2.3"></a></h4><p>Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participatie van de verschillende belanghebbenden. Belanghebbenden kunnen op vier manieren participeren aan het wijzigings- en besluitvormingsproces:  </p><ol>
 <li>Als lid van de API Community van het Kennisplatform / de Interesse Groep (IG)  </li>
 <li>Als lid van de Technische Architectuur Groep (TAG)  </li>
 <li>Als lid van het Tactisch overleg  </li>
 <li>Als lid van het OBDO</li>
 </ol><p><em>Ad 1) Deelname aan de API-Community staat open voor alle belanghebbenden;</em><br><em>Ad 2) Invulling van het Tactisch overleg volgt, zodra bekend is welk gremium dit is;</em><br><em>Ad 3) Het OBDO kent een vaste vertegenwoordiging. <a href="https://www.digitaleoverheid.nl/governance-digitale-overheid/">Zie voor meer informatie de governance van Digitaleoverheid.nl</a>.</em><br><em>Ad 4) Aangezien het overleg van de Technische Architectuur Groep (het Technisch Overleg) het eerste besluitvormende gremium is van de standaard, en besluitvorming in dit gremium plaatsvindt op basis van consensus, stelt Logius een aantal voorwaarden aan deelname:</em>  </p><ol>
-<li>   Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.</li>
-<li>   De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.</li>
-<li>   Het belang van de Nederlandse overheid dient voldoende geborgd te zijn in het technisch overleg.</li>
+<li>Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.</li>
+<li>De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.</li>
+<li>Het belang van de Nederlandse overheid dient voldoende geborgd te zijn in het technisch overleg.</li>
 </ol><p>Personen/partijen die willen deelnemen aan het technisch overleg kunnen een mail sturen aan <a href="mailto:api@logius.nl">api@logius.nl</a>, waarin zij aangeven wat hun belang is bij de standaard. Met inachtneming van bovenstaande punten, beoordeeld Logius de aanvraag.</p><blockquote>
 <p>N.B. Gezien de grote overlap tussen de deelnemers van het beoogde Technisch Overleg en de werkgroep ADR van het Kennisplatform (zie <em>Samenwerking met andere beheer organisaties</em>), hebben Logius en het kennisplatform besloten deze overleggen vooralsnog te combineren. Als in de toekomst blijkt dat deze combinatie geen goede invulling geeft aan een effectieve en gedragen besluitvorming m.b.t. tot de standaard, kan Logius ten allen tijde een eigen reeks Technische Overleggen organiseren.  </p>
-</blockquote></section></section><section id="financering"><h3 id="x2-3-financering"><bdi class="secno">2.3 </bdi>Financering<a class="self-link" aria-label="§" href="#financering"></a></h3><p>Het beheer van de ADR-standaard wordt gefinancierd door min. BZK voor een initiële periode van tenminste drie jaar (2020-2023) om gebruikers het vertrouwen te geven dat er geen desinvesteringen worden gedaan bij het implementeren van de standaard. Na drie jaar wordt de financiering verlengd als blijkt dat het nut van en de behoefte aan de standaard nog aanwezig is.</p></section></section><section data-format="markdown" id="tactiek"><h2 id="x3-tactiek"><bdi class="secno">3. </bdi>Tactiek<a class="self-link" aria-label="§" href="#tactiek"></a></h2><section id="community"><h3 id="x3-1-community"><bdi class="secno">3.1 </bdi>Community<a class="self-link" aria-label="§" href="#community"></a></h3><p>De ADR community/ Interesse Groep bestaat uit eenieder die belanghebbende of belangstellende is m.b.t. de standaard. Deelname aan de community kent geen drempels of restricties. Leden van de community kunnen alle informatie m.b.t. de standaard en het beheer daarvan inzien via de website en via verschillende kanalen issues of RFC's melden. Daarnaast kunnen community leden reageren op openbare consultaties en onder bepaalde voorwaarden deelnemen aan de Technische Architectuur Groep (zie 2.2.3).</p></section><section id="architectuur"><h3 id="x3-2-architectuur"><bdi class="secno">3.2 </bdi>Architectuur<a class="self-link" aria-label="§" href="#architectuur"></a></h3><p>De ADR standaard is een op zichzelf staande standaard en geen onderdeel van een bovenliggende standaard. Wel wordt er in de ADR verwezen naar verschillende andere (internationale) standaarden.</p><section id="internationale-europese-en-nationale-standaardisatiegemeenschap"><h4 id="x3-2-1-internationale-europese-en-nationale-standaardisatiegemeenschap"><bdi class="secno">3.2.1 </bdi>Internationale, Europese en nationale standaardisatiegemeenschap<a class="self-link" aria-label="§" href="#internationale-europese-en-nationale-standaardisatiegemeenschap"></a></h4><p>De ADR-Standaard volgt de ontwikkeling van internationale standaarden (zoals bijvoorbeeld de HTTP standaarden van het IETF) in het algemeen. Meer specifiek volgen de specialisten van Logius en de leden van de TAG de standaarden waarnaar wordt gerefereerd in de standaard en bespreken deze ontwikkelingen ook in het Technisch Overleg. Indien relevant worden op basis van de internationale ontwikkelingen rfc's opgesteld om de ADR-standaard aan te passen, verbeteren of actualiseren. Onderstaand is het overzicht overgenomen van de standaarden waaraan wordt gerefereerd in de ADR:</p><ol>
+</blockquote></section></section><section id="financering"><h3 id="x2-3-financering"><bdi class="secno">2.3 </bdi>Financering<a class="self-link" href="#financering" aria-label="Permalink for Section 2.3"></a></h3><p>Het beheer van de ADR-standaard wordt gefinancierd door min. BZK voor een initiële periode van tenminste drie jaar (2020-2023) om gebruikers het vertrouwen te geven dat er geen desinvesteringen worden gedaan bij het implementeren van de standaard. Na drie jaar wordt de financiering verlengd als blijkt dat het nut van en de behoefte aan de standaard nog aanwezig is.</p></section></section>
+<section data-format="markdown" id="tactiek"><h2 id="x3-tactiek"><bdi class="secno">3. </bdi>Tactiek<a class="self-link" href="#tactiek" aria-label="Permalink for Section 3."></a></h2><section id="community"><h3 id="x3-1-community"><bdi class="secno">3.1 </bdi>Community<a class="self-link" href="#community" aria-label="Permalink for Section 3.1"></a></h3><p>De ADR community/ Interesse Groep bestaat uit eenieder die belanghebbende of belangstellende is m.b.t. de standaard. Deelname aan de community kent geen drempels of restricties. Leden van de community kunnen alle informatie m.b.t. de standaard en het beheer daarvan inzien via de website en via verschillende kanalen issues of RFC's melden. Daarnaast kunnen community leden reageren op openbare consultaties en onder bepaalde voorwaarden deelnemen aan de Technische Architectuur Groep (zie paragraaf <a href="#Deelname" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document">deelname</a>).</p></section><section id="architectuur"><h3 id="x3-2-architectuur"><bdi class="secno">3.2 </bdi>Architectuur<a class="self-link" href="#architectuur" aria-label="Permalink for Section 3.2"></a></h3><p>De ADR standaard is een op zichzelf staande standaard en geen onderdeel van een bovenliggende standaard. Wel wordt er in de ADR verwezen naar verschillende andere (internationale) standaarden.</p><section id="internationale-europese-en-nationale-standaardisatiegemeenschap"><h4 id="x3-2-1-internationale-europese-en-nationale-standaardisatiegemeenschap"><bdi class="secno">3.2.1 </bdi>Internationale, Europese en nationale standaardisatiegemeenschap<a class="self-link" href="#internationale-europese-en-nationale-standaardisatiegemeenschap" aria-label="Permalink for Section 3.2.1"></a></h4><p>De ADR-Standaard volgt de ontwikkeling van internationale standaarden (zoals bijvoorbeeld de HTTP standaarden van het IETF) in het algemeen. Meer specifiek volgen de specialisten van Logius en de leden van de TAG de standaarden waarnaar wordt gerefereerd in de standaard en bespreken deze ontwikkelingen ook in het Technisch Overleg. Indien relevant worden op basis van de internationale ontwikkelingen rfc's opgesteld om de ADR-standaard aan te passen, verbeteren of actualiseren. Onderstaand is het overzicht overgenomen van de standaarden waaraan wordt gerefereerd in de ADR:</p><ol>
 <li><strong>[OPENAPIS]</strong> <br>
 <a href="https://www.openapis.org/"><em>OpenAPI Specification</em></a>. Darrell Miller; Jeremy Whitlock; Marsh Gardiner; Mike Ralphson; Ron Ratovsky; Uri Sarid; Tony Tam; Jason Harmon. OpenAPI Initiative. URL: <a href="https://www.openapis.org/">https://www.openapis.org/</a></li>
 <li><strong>[rfc3986]</strong> <br>
@@ -474,76 +416,74 @@ Het Nut en de werking van de standaard zijn reeds goed beschreven door het Forum
 <a href="https://httpwg.org/specs/rfc7231.html"><em>Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content</em></a>. R. Fielding, Ed.; J. Reschke, Ed.. IETF. June 2014. Proposed Standard. URL: <a href="https://httpwg.org/specs/rfc7231.html">https://httpwg.org/specs/rfc7231.html</a></li>
 <li><strong>[SemVer]</strong><br>
 <a href="https://semver.org/"><em>Semantic Versioning 2.0.0</em></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org/">https://semver.org</a></li>
-</ol></section><section id="samenwerking-met-andere-beheerorganisaties"><h4 id="x3-2-2-samenwerking-met-andere-beheerorganisaties"><bdi class="secno">3.2.2 </bdi>Samenwerking met andere beheerorganisaties<a class="self-link" aria-label="§" href="#samenwerking-met-andere-beheerorganisaties"></a></h4><p><strong>Kennisplatform API's</strong></p><p>Kennisplatform API's is een initiatief van Geonovum, Bureau Forum Standaardisatie, Kamer van Koophandel, VNG Realisatie en Logius. Het doel van het Kennisplatform is om de kennis over het toepassen van API's uit te wisselen en de aanpak bij verschillende organisaties op elkaar af te stemmen en waar nodig te standaardiseren. In het kennisplatform wordt gezamenlijk gekeken naar strategische en tactische vraagstukken rond het ontwikkelen van API's door de overheid en gebruik van deze API's buiten en binnen de overheid. Dit vanuit de gedachte dat we in een digitale samenleving eenvoudig met elkaar moeten kunnen samenwerken.  </p><p>De ADR-standaard komt voort uit de Nederlandse API Strategie die beheerd wordt door het Kennisplatform API's en is door het kennisplatform ontwikkeld. Op het moment dat er in het kennisplatform consensus was over de kwaliteit van de ADR-standaard en de wenselijkheid deze via het 'pas toe of leg uit' -principe normatief te laten verklaren is de standaard voorgedragen aan Forum Standaardisatie voor het verkrijgen van de voor overheden verplichte 'pas toe of leg uit' status en heeft Logius het beheer van dit normatieve deel op zich genomen.  </p><p>Het kennisplatform API's blijft via haar werkgroep ADR actief met API Design Rules, maar richt zich primair op de ontwikkeling van extensies op de ADR. Deze extensies zijn bovendien (nog) niet normatief van aard. Logius heeft bij het beheer van de ADR-standaard nauw contact met het kennisplatform (en specifiek de werkgroep ADR) om zo te borgen dat wensen en issues m.b.t. de ADR bij beide partijen helder zijn en hier gezamenlijk de beste aanpak voor gekozen kan worden. (Zie ook h4).  </p></section><section id="nederlandse-overheid-referentie-architectuur-nora"><h4 id="x3-2-3-nederlandse-overheid-referentie-architectuur-nora"><bdi class="secno">3.2.3 </bdi>Nederlandse Overheid Referentie Architectuur (NORA)<a class="self-link" aria-label="§" href="#nederlandse-overheid-referentie-architectuur-nora"></a></h4><p>De ADR-standaard volgt de principes van de Nederlandse Overheid Referentie Architectuur. Zie voor meer informatie: <a href="https://www.noraonline.nl/wiki/NORA_online">https://www.noraonline.nl/wiki/NORA_online</a>  </p><p>In de NORA is sinds 2017 het Thema API's opgenomen en beschreven. De NORA beschrijft met name wat een API is en waarom API's belangrijk zijn. Ook zijn er op de site aanbevelingen voor API's in de Enterprise Architectuur en de toepassing van API's in het ontwerp van een dienst.</p></section><section id="overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"><h4 id="x3-2-4-overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"><bdi class="secno">3.2.4 </bdi>Overige belangrijke vermeldingen (zoals overlap met andere standaarden)<a class="self-link" aria-label="§" href="#overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"></a></h4><p><em>OAuth (pas toe of leg uit standaard)</em></p><p>De API Design rules beschrijven zoals gezegd een set van richtlijnen om REST API's vorm te geven en toe te passen. Autorisatie van personen die API's raadplegen is nader uitgewerkt en beschreven in de OAuth standaard zoals gepubliceerd op <a href="https://github.com/Logius-standaarden/OAuth-NL-profiel">Logius-standaarden/OAuth-NL-profiel (github.com)</a>).</p><p><em>Haal Centraal &amp; Common Ground (VNG)</em></p><p>Hoe API's daadwerkelijk dienen te functioneren en welke generieke, specifieke en meta functies API's moeten omvatten wordt o.a. door VNG gestandaardiseerd in de Haal Centraal initiatieven.</p><p>Een lijst van API's die in ontwikkeling zijn is te vinden op <a href="https://github.com/VNG-Realisatie">VNG Realisatie (github.com)</a> Ook is er een belangrijk initiatief vanuit VNG Realisatie wat een drijvende kracht is achter de gezamenlijke ontwikkeling van standaard API's genaamd <a href="https://commonground.nl/">Common Ground</a>. Vanuit dit initiatief zijn standaard API voorzieningen ontwikkeld zoals een <a href="https://developer.overheid.nl/">Developer portaal voor de overheid</a> en het <a href="https://api-test.nl/">API Test Platform (api-test.nl)</a></p></section></section><section id="rechtenbeleid"><h3 id="x3-3-rechtenbeleid"><bdi class="secno">3.3 </bdi>Rechtenbeleid<a class="self-link" aria-label="§" href="#rechtenbeleid"></a></h3><p>De ADR Standaard zelf en dit beheermodel vallen onder de Creative Commons licentie (<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>) Dit houdt in dat het is toegestaan om deze documenten te gebruiken, verder te verspreiden en aan te passen. Dit werk en de specificaties van de ADR-standaard worden royaltee-free ter beschikking gesteld. Organisaties en personen die bijdragen aan de ADR dienen dit onder dezelfde voorwaarden te doen als bij het originele werk. Door bij te dragen aan de ADR verklaren zij hiermee in te stemmen.</p><p>Uitgesloten van alle bovenstaande zijn rechten verbonden aan de standaarden, profielen en andere onderdelen waar de ADR gebruik van maakt. Hierop zijn de rechten van de betreffende standaarden, profielen en andere onderdelen zelf van toepassing. Dit zijn in geval van de ADR allemaal open standaarden.</p></section><section id="kwaliteitsbeleid-en-benchmarking"><h3 id="x3-4-kwaliteitsbeleid-en-benchmarking"><bdi class="secno">3.4 </bdi>Kwaliteitsbeleid en benchmarking<a class="self-link" aria-label="§" href="#kwaliteitsbeleid-en-benchmarking"></a></h3><p>Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook 1.3 en 2.2.) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.</p></section><section id="adoptie-en-erkenning"><h3 id="x3-5-adoptie-en-erkenning"><bdi class="secno">3.5 </bdi>Adoptie en erkenning<a class="self-link" aria-label="§" href="#adoptie-en-erkenning"></a></h3><p>De ADR-standaard heeft de 'pas toe of leg uit' -status van Forum Standaardisatie. Dit betekent kort gezegd dat Nederlandse overheidspartijen en partijen uit de (semi) publieke sector deze standaard dienen toe te passen op het moment dat zij hun informatie met behulp van (REST) API's willen ontsluiten. Zie hoofdstuk 1 voor meer informatie.</p></section></section><section data-format="markdown" id="operationeel"><h2 id="x4-operationeel"><bdi class="secno">4. </bdi>Operationeel<a class="self-link" aria-label="§" href="#operationeel"></a></h2><section id="initiatie"><h3 id="x4-1-initiatie"><bdi class="secno">4.1 </bdi>Initiatie<a class="self-link" aria-label="§" href="#initiatie"></a></h3><ol>
+</ol></section><section id="samenwerking-met-andere-beheerorganisaties"><h4 id="x3-2-2-samenwerking-met-andere-beheerorganisaties"><bdi class="secno">3.2.2 </bdi>Samenwerking met andere beheerorganisaties<a class="self-link" href="#samenwerking-met-andere-beheerorganisaties" aria-label="Permalink for Section 3.2.2"></a></h4><section id="kennisplatform-api-s"><h5 id="x3-2-2-1-kennisplatform-api-s"><bdi class="secno">3.2.2.1 </bdi>Kennisplatform API's<a class="self-link" href="#kennisplatform-api-s" aria-label="Permalink for Section 3.2.2.1"></a></h5><p>Kennisplatform API's is een initiatief van Geonovum, Bureau Forum Standaardisatie, Kamer van Koophandel, VNG Realisatie en Logius. Het doel van het Kennisplatform is om de kennis over het toepassen van API's uit te wisselen en de aanpak bij verschillende organisaties op elkaar af te stemmen en waar nodig te standaardiseren. In het kennisplatform wordt gezamenlijk gekeken naar strategische en tactische vraagstukken rond het ontwikkelen van API's door de overheid en gebruik van deze API's buiten en binnen de overheid. Dit vanuit de gedachte dat we in een digitale samenleving eenvoudig met elkaar moeten kunnen samenwerken.  </p><p>De ADR-standaard komt voort uit de Nederlandse API Strategie die beheerd wordt door het Kennisplatform API's en is door het kennisplatform ontwikkeld. Op het moment dat er in het kennisplatform consensus was over de kwaliteit van de ADR-standaard en de wenselijkheid deze via het 'pas toe of leg uit' -principe normatief te laten verklaren is de standaard voorgedragen aan Forum Standaardisatie voor het verkrijgen van de voor overheden verplichte 'pas toe of leg uit' status en heeft Logius het beheer van dit normatieve deel op zich genomen.  </p><p>Het kennisplatform API's blijft via haar werkgroep ADR actief met API Design Rules, maar richt zich primair op de ontwikkeling van extensies op de ADR. Deze extensies zijn bovendien (nog) niet normatief van aard. Logius heeft bij het beheer van de ADR-standaard nauw contact met het kennisplatform (en specifiek de werkgroep ADR) om zo te borgen dat wensen en issues m.b.t. de ADR bij beide partijen helder zijn en hier gezamenlijk de beste aanpak voor gekozen kan worden. (Zie ook h4).  </p></section></section><section id="nederlandse-overheid-referentie-architectuur-nora"><h4 id="x3-2-3-nederlandse-overheid-referentie-architectuur-nora"><bdi class="secno">3.2.3 </bdi>Nederlandse Overheid Referentie Architectuur (NORA)<a class="self-link" href="#nederlandse-overheid-referentie-architectuur-nora" aria-label="Permalink for Section 3.2.3"></a></h4><p>De ADR-standaard volgt de principes van de Nederlandse Overheid Referentie Architectuur. Zie voor meer informatie: <a href="https://www.noraonline.nl/wiki/NORA_online">https://www.noraonline.nl/wiki/NORA_online</a>  </p><p>In de NORA is sinds 2017 het Thema API's opgenomen en beschreven. De NORA beschrijft met name wat een API is en waarom API's belangrijk zijn. Ook zijn er op de site aanbevelingen voor API's in de Enterprise Architectuur en de toepassing van API's in het ontwerp van een dienst.</p></section><section id="overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"><h4 id="x3-2-4-overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden"><bdi class="secno">3.2.4 </bdi>Overige belangrijke vermeldingen (zoals overlap met andere standaarden)<a class="self-link" href="#overige-belangrijke-vermeldingen-zoals-overlap-met-andere-standaarden" aria-label="Permalink for Section 3.2.4"></a></h4><section id="oauth-pas-toe-of-leg-uit-standaard"><h5 id="x3-2-4-1-oauth-pas-toe-of-leg-uit-standaard"><bdi class="secno">3.2.4.1 </bdi>OAuth (pas toe of leg uit standaard)<a class="self-link" href="#oauth-pas-toe-of-leg-uit-standaard" aria-label="Permalink for Section 3.2.4.1"></a></h5><p>De API Design rules beschrijven zoals gezegd een set van richtlijnen om REST API's vorm te geven en toe te passen. Autorisatie van personen die API's raadplegen is nader uitgewerkt en beschreven in de OAuth standaard zoals gepubliceerd op <a href="https://github.com/Logius-standaarden/OAuth-NL-profiel">Logius-standaarden/OAuth-NL-profiel (github.com)</a>).</p></section><section id="haal-centraal-common-ground-vng"><h5 id="x3-2-4-2-haal-centraal-common-ground-vng"><bdi class="secno">3.2.4.2 </bdi>Haal Centraal &amp; Common Ground (VNG)<a class="self-link" href="#haal-centraal-common-ground-vng" aria-label="Permalink for Section 3.2.4.2"></a></h5><p>Hoe API's daadwerkelijk dienen te functioneren en welke generieke, specifieke en meta functies API's moeten omvatten wordt o.a. door VNG gestandaardiseerd in de Haal Centraal initiatieven.</p><p>Een lijst van API's die in ontwikkeling zijn is te vinden op <a href="https://github.com/VNG-Realisatie">VNG Realisatie (github.com)</a> Ook is er een belangrijk initiatief vanuit VNG Realisatie wat een drijvende kracht is achter de gezamenlijke ontwikkeling van standaard API's genaamd <a href="https://commonground.nl/">Common Ground</a>. Vanuit dit initiatief zijn standaard API voorzieningen ontwikkeld zoals een <a href="https://developer.overheid.nl/">Developer portaal voor de overheid</a> en het <a href="https://api-test.nl/">API Test Platform (api-test.nl)</a></p></section></section></section><section id="rechtenbeleid"><h3 id="x3-3-rechtenbeleid"><bdi class="secno">3.3 </bdi>Rechtenbeleid<a class="self-link" href="#rechtenbeleid" aria-label="Permalink for Section 3.3"></a></h3><p>De ADR Standaard zelf en dit beheermodel vallen onder de Creative Commons licentie (<a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>) Dit houdt in dat het is toegestaan om deze documenten te gebruiken, verder te verspreiden en aan te passen. Dit werk en de specificaties van de ADR-standaard worden royaltee-free ter beschikking gesteld. Organisaties en personen die bijdragen aan de ADR dienen dit onder dezelfde voorwaarden te doen als bij het originele werk. Door bij te dragen aan de ADR verklaren zij hiermee in te stemmen.</p><p>Uitgesloten van alle bovenstaande zijn rechten verbonden aan de standaarden, profielen en andere onderdelen waar de ADR gebruik van maakt. Hierop zijn de rechten van de betreffende standaarden, profielen en andere onderdelen zelf van toepassing. Dit zijn in geval van de ADR allemaal open standaarden.</p></section><section id="kwaliteitsbeleid-en-benchmarking"><h3 id="x3-4-kwaliteitsbeleid-en-benchmarking"><bdi class="secno">3.4 </bdi>Kwaliteitsbeleid en benchmarking<a class="self-link" href="#kwaliteitsbeleid-en-benchmarking" aria-label="Permalink for Section 3.4"></a></h3><p>Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook de paragraaf <a href="#Bomos" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-0">Bomos</a> en <a href="#Governance" class="respec-offending-element" title="Broken local reference found in document." id="respec-offender-broken-local-reference-found-in-document-1">Governance</a>) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.</p></section><section id="adoptie-en-erkenning"><h3 id="x3-5-adoptie-en-erkenning"><bdi class="secno">3.5 </bdi>Adoptie en erkenning<a class="self-link" href="#adoptie-en-erkenning" aria-label="Permalink for Section 3.5"></a></h3><p>De ADR-standaard heeft de 'pas toe of leg uit' -status van Forum Standaardisatie. Dit betekent kort gezegd dat Nederlandse overheidspartijen en partijen uit de (semi) publieke sector deze standaard dienen toe te passen op het moment dat zij hun informatie met behulp van (REST) API's willen ontsluiten. Zie hoofdstuk 1 voor meer informatie.</p></section></section>
+<section data-format="markdown" id="operationeel"><h2 id="x4-operationeel"><bdi class="secno">4. </bdi>Operationeel<a class="self-link" href="#operationeel" aria-label="Permalink for Section 4."></a></h2><section id="initiatie"><h3 id="x4-1-initiatie"><bdi class="secno">4.1 </bdi>Initiatie<a class="self-link" href="#initiatie" aria-label="Permalink for Section 4.1"></a></h3><ol>
 <li>Uitbreidingen en aanpassingen in de API-standaarden komen tot stand door participatie van de verschillende belanghebbenden.</li>
 <li>Belanghebbenden kunnen op vier manieren participeren: als lid van de API Community en/of de Technische Architectuur Groep en/of als lid van de Adviesraad of als lid van het OBDO.</li>
-</ol></section><section id="wensen-en-eisen"><h3 id="x4-2-wensen-en-eisen"><bdi class="secno">4.2 </bdi>Wensen en Eisen<a class="self-link" aria-label="§" href="#wensen-en-eisen"></a></h3><p>RFC's kunnen binnen komen via verschillende kanalen:</p><ol>
+</ol></section><section id="wensen-en-eisen"><h3 id="x4-2-wensen-en-eisen"><bdi class="secno">4.2 </bdi>Wensen en Eisen<a class="self-link" href="#wensen-en-eisen" aria-label="Permalink for Section 4.2"></a></h3><p>RFC's kunnen binnen komen via verschillende kanalen:</p><ol>
 <li>Rechtstreeks bij Logius, tijdens overleggen, via de website of mail</li>
 <li>Bij de werkgroep ADR van het Kennisplatform API's, tijdens overleggen, via de website of mail</li>
-</ol><p>RFC's worden als issue's geregistreerd in de repository van het kennisplatform API's op Github. <a href="https://github.com/Geonovum/KP-APIs/issues">https://github.com/Geonovum/KP-APIs/issues</a></p><p>Om te voorkomen dat er verschillende lijsten met issues en verzoeken ontstaan, is met het kennisplatform API's afgesproken dat ieder issue en verzoek als eerste wordt beoordeeld door de werkgroep ADR van het kennisplatform API's. Dit voorkomt het ontstaan van verschillende stromen met RFC's en geeft de werkgroep de gelegenheid om in te schatten of de RFC betrekking heeft op de ADR-standaard die Logius beheert, of dat er sprake is van een verzoek dat het best kan landen in één van de (niet normatieve) extensies die het kennisplatform beheert.</p><p>Dit houdt concreet in dat RFC's die rechtstreeks bij Logius worden neergelegd, door Logius worden doorgespeeld aan de werkgroep ADR zodat daar de eerste beoordeling kan plaatsvinden.</p><p><figure id="ADR_Governance-RFC_Process"><img src="media/ADR_Governance-RFC_Process.png" alt="ADR RFC Procesmodel" title="ADR RFC Procesmodel" height="451" width="1141"><figcaption>Figuur <bdi class="figno">3</bdi> <span class="fig-title">ADR RFC Procesmodel</span></figcaption></figure></p><blockquote>
+</ol><p>RFC's worden als issue's geregistreerd in de repository van het kennisplatform API's op Github. <a href="https://github.com/Geonovum/KP-APIs/issues">https://github.com/Geonovum/KP-APIs/issues</a></p><p>Om te voorkomen dat er verschillende lijsten met issues en verzoeken ontstaan, is met het kennisplatform API's afgesproken dat ieder issue en verzoek als eerste wordt beoordeeld door de werkgroep ADR van het kennisplatform API's. Dit voorkomt het ontstaan van verschillende stromen met RFC's en geeft de werkgroep de gelegenheid om in te schatten of de RFC betrekking heeft op de ADR-standaard die Logius beheert, of dat er sprake is van een verzoek dat het best kan landen in één van de (niet normatieve) extensies die het kennisplatform beheert.</p><p>Dit houdt concreet in dat RFC's die rechtstreeks bij Logius worden neergelegd, door Logius worden doorgespeeld aan de werkgroep ADR zodat daar de eerste beoordeling kan plaatsvinden.</p><p><figure id="fig-adr-rfc-procesmodel"><img src="media/ADR_Governance-RFC_Process.svg" alt="ADR RFC Procesmodel" title="ADR RFC Procesmodel"><figcaption>Figuur <bdi class="figno">3</bdi> <span class="fig-title">ADR RFC Procesmodel</span></figcaption></figure></p><blockquote>
 <p>Figuur 5. ADR RFC Procesmodel</p>
-</blockquote></section><section id="uitvoering-en-ontwikkeling-wijzigingsproces"><h3 id="x4-3-uitvoering-en-ontwikkeling-wijzigingsproces"><bdi class="secno">4.3 </bdi>Uitvoering en ontwikkeling (Wijzigingsproces)<a class="self-link" aria-label="§" href="#uitvoering-en-ontwikkeling-wijzigingsproces"></a></h3><p>De procedure van RCF naar daadwerkelijke wijziging ziet er als volgt uit:</p><ul>
+</blockquote></section><section id="uitvoering-en-ontwikkeling-wijzigingsproces"><h3 id="x4-3-uitvoering-en-ontwikkeling-wijzigingsproces"><bdi class="secno">4.3 </bdi>Uitvoering en ontwikkeling (Wijzigingsproces)<a class="self-link" href="#uitvoering-en-ontwikkeling-wijzigingsproces" aria-label="Permalink for Section 4.3"></a></h3><p>De procedure van RCF naar daadwerkelijke wijziging ziet er als volgt uit:</p><ul>
 <li>Issues die in behandeling worden genomen worden als RFC gelabeld</li>
 <li>RFC's worden besproken en uitgewerkt in de Werkgroep ADR</li>
 <li>RFC's worden vastgesteld in Technisch Overleg API's (TO)</li>
 <li>RFC worden na vaststelling in het TO Openbaar geconsulteerd</li>
 <li>Na vaststelling volgt publicatie van de nieuwe versie van standaard</li>
 </ul><blockquote>
-<p>N.B. Zolang het Centrum voor Standaarden nog geen predicaat "Uitstekend beheer" heeft ontvangen van Forum Standaardisatie, zullen nieuwe versies na vaststelling in het TO aan Forum Standaardisatie worden voorgelegd ter beoordeling.<br>N.B.2. Het technisch overleg is momenteel samengevoegd met het structurele overleg van de werkgroep ADR van het Kennisplatform (zie 2.2.3)</p>
-</blockquote><p>Dit is schematisch weergegeven in het onderstaande ADR Governance model:  </p><p><figure id="ADR_Governance_model"><img src="media/ADR_Governance_model.png" alt="ADR Governance model" title="ADR Governance model" height="463" width="522"><figcaption>Figuur <bdi class="figno">4</bdi> <span class="fig-title">ADR Governance model</span></figcaption></figure></p><blockquote>
+<p>N.B. Zolang het Centrum voor Standaarden nog geen predicaat "Uitstekend beheer" heeft ontvangen van Forum Standaardisatie, zullen nieuwe versies na vaststelling in het TO aan Forum Standaardisatie worden voorgelegd ter beoordeling.<br>N.B.2. Het technisch overleg is momenteel samengevoegd met het structurele overleg van de werkgroep ADR van het Kennisplatform</p>
+</blockquote><p>Dit is schematisch weergegeven in het onderstaande ADR Governance model:  </p><p><figure id="fig-adr-governance-model"><img src="media/ADR_Governance_model.svg" alt="ADR Governance model" title="ADR Governance model"><figcaption>Figuur <bdi class="figno">4</bdi> <span class="fig-title">ADR Governance model</span></figcaption></figure></p><blockquote>
 <p>Figuur 6. ADR Governance model</p>
-</blockquote></section><section id="status-van-de-standaard"><h3 id="x4-4-status-van-de-standaard"><bdi class="secno">4.4 </bdi>Status van de standaard<a class="self-link" aria-label="§" href="#status-van-de-standaard"></a></h3><p>Logius, Centrum voor standaarden onderscheid vier statussen die de ADR-standaard kan hebben:</p><table class="dkkvs">
+</blockquote></section><section id="status-van-de-standaard"><h3 id="x4-4-status-van-de-standaard"><bdi class="secno">4.4 </bdi>Status van de standaard<a class="self-link" href="#status-van-de-standaard" aria-label="Permalink for Section 4.4"></a></h3><p>Logius, Centrum voor standaarden onderscheid vier statussen die de ADR-standaard kan hebben:</p><table class="dkkvs">
 <thead>
 <tr>
-<th><strong>Afkorting</strong></th>
-<th><strong>Status van de standaard</strong></th>
-<th><strong>Beschrijving van de status</strong></th>
+<th align="center"><strong>Afkorting</strong></th>
+<th align="left"><strong>Status van de standaard</strong></th>
+<th align="left"><strong>Beschrijving van de status</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>IO</td>
-<td>In Ontwikkeling</td>
-<td>Een nieuwe release van de standaard is "In Ontwikkeling" wanneer er met medeweten en medewerking van participanten aan gewerkt wordt en wanneer dit onderdeel of deze release nog niet voor de buitenwereld is gepubliceerd.</td>
+<td align="center">IO</td>
+<td align="left">In Ontwikkeling</td>
+<td align="left">Een nieuwe release van de standaard is "In Ontwikkeling" wanneer er met medeweten en medewerking van participanten aan gewerkt wordt en wanneer dit onderdeel of deze release nog niet voor de buitenwereld is gepubliceerd.</td>
 </tr>
 <tr>
-<td>IG</td>
-<td>In Gebruik</td>
-<td>Als een nieuwe release van de standaard gereed is, en is bestendigd door Forum Standaardisatie, stelt het Technisch Overleg de status 'In Gebruik' vast. Door deze vaststelling worden gebruikers en ICT-leveranciers opgeroepen deze nieuwe release op te nemen in software en in gebruik te nemen.</td>
+<td align="center">IG</td>
+<td align="left">In Gebruik</td>
+<td align="left">Als een nieuwe release van de standaard gereed is, en is bestendigd door Forum Standaardisatie, stelt het Technisch Overleg de status 'In Gebruik' vast. Door deze vaststelling worden gebruikers en ICT-leveranciers opgeroepen deze nieuwe release op te nemen in software en in gebruik te nemen.</td>
 </tr>
 <tr>
-<td>EO</td>
-<td>Einde Ondersteuning</td>
-<td>De standaardversie met de status "Einde ondersteuning" wordt niet meer ondersteund door de beheerder.<br>De kennis en informatie voor vragen en support is bij de beheerder niet langer beschikbaar.</td>
+<td align="center">EO</td>
+<td align="left">Einde Ondersteuning</td>
+<td align="left">De standaardversie met de status "Einde ondersteuning" wordt niet meer ondersteund door de beheerder.<br>De kennis en informatie voor vragen en support is bij de beheerder niet langer beschikbaar.</td>
 </tr>
 <tr>
-<td>TG</td>
-<td>Teruggetrokken</td>
-<td>De standaard krijgt de status "Teruggetrokken" indien een release van de standaard niet bruikbaar blijkt (bijv. vanwege implementatieproblemen).</td>
+<td align="center">TG</td>
+<td align="left">Teruggetrokken</td>
+<td align="left">De standaard krijgt de status "Teruggetrokken" indien een release van de standaard niet bruikbaar blijkt (bijv. vanwege implementatieproblemen).</td>
 </tr>
 </tbody></table><blockquote>
 <p>Figuur 7. Mogelijke statussen van de standaard</p>
-</blockquote></section><section id="documentatie"><h3 id="x4-5-documentatie"><bdi class="secno">4.5 </bdi>Documentatie<a class="self-link" aria-label="§" href="#documentatie"></a></h3><p>Alle documenten m.b.t. de standaard en het beheer van de standaard worden openbaar en zonder drempels voor gebruik, gepubliceerd op logius.nl en onze Github pagina's. Logius publiceert tenminste de volgende documenten:</p><ul>
+</blockquote></section><section id="documentatie"><h3 id="x4-5-documentatie"><bdi class="secno">4.5 </bdi>Documentatie<a class="self-link" href="#documentatie" aria-label="Permalink for Section 4.5"></a></h3><p>Alle documenten m.b.t. de standaard en het beheer van de standaard worden openbaar en zonder drempels voor gebruik, gepubliceerd op logius.nl en onze Github pagina's. Logius publiceert tenminste de volgende documenten:</p><ul>
 <li>Dit ADR-beheermodel</li>
 <li>De vergaderstukken van het Technisch overleg en overige besluitvormende gremia.</li>
 <li>De specificaties van de standaard</li>
 <li>De voorlopige specificaties van de nieuwe versie van de standaard.</li>
-</ul><p>Versie 1.0 van de ADR is gepubliceerd op:<br>
-<a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0">https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0</a></p><p>De laatste versie van de ADR is gepubliceerd op:<br>
-<a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/">https://publicatie.centrumvoorstandaarden.nl/api/adr/</a></p><p>De laatste concept versie van de standard is gepubliceerd op:<br>
-<a href="https://logius-standaarden.github.io/API-Design-Rules/">https://logius-standaarden.github.io/API-Design-Rules/</a></p><p>Het beheermodel is gepubliceerd op:<br>
-<a href="https://github.com/Logius-standaarden/ADR-Beheermodel">Logius-standaarden/ADR-Beheermodel (github.com)</a></p><p>De vergaderstukken zijn gepubliceerd op:<br>
-<a href="https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken">Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)</a></p></section></section><section data-format="markdown" id="implementatieondersteuning"><h2 id="x5-implementatieondersteuning"><bdi class="secno">5. </bdi>Implementatieondersteuning<a class="self-link" aria-label="§" href="#implementatieondersteuning"></a></h2><section id="opleiding-en-advies"><h3 id="x5-1-opleiding-en-advies"><bdi class="secno">5.1 </bdi>Opleiding en advies<a class="self-link" aria-label="§" href="#opleiding-en-advies"></a></h3><p>Logius biedt momenteel geen opleiding aan, maar borgt dat de informatie m.b.t. de standaard altijd, zonder drempels, toegankelijk is. Bovendien kunnen geïnteresseerden via verschillende kanalen contact opnemen met Logius in geval van vragen of opmerkingen. Zie hiervoor 5.2 Helpdesk.<br>Aanvullend organiseert Kennisplatform API's regelmatig overleggen en seminars m.b.t. de Nederlandse API Strategie waar de ADR-standaard een onderdeel van is. Zie hiervoor <a href="http://www.apigov.nl/">www.apigov.nl</a>.</p></section><section id="helpdesk"><h3 id="x5-2-helpdesk"><bdi class="secno">5.2 </bdi>Helpdesk<a class="self-link" aria-label="§" href="#helpdesk"></a></h3><p>Logius biedt ondersteuning en advies via verschillende kanalen:</p><ul>
+</ul><p>Versie 1.0 van de ADR is gepubliceerd op:<br><a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0">https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0</a>  </p><p>De laatste versie van de ADR is gepubliceerd op:<br><a href="https://publicatie.centrumvoorstandaarden.nl/api/adr/">https://publicatie.centrumvoorstandaarden.nl/api/adr/</a>  </p><p>De laatste concept versie van de standard is gepubliceerd op:<br><a href="https://logius-standaarden.github.io/API-Design-Rules/">https://logius-standaarden.github.io/API-Design-Rules/</a>  </p><p>Het beheermodel is gepubliceerd op:<br><a href="https://github.com/Logius-standaarden/ADR-Beheermodel">Logius-standaarden/ADR-Beheermodel (github.com)</a>  </p><p>De vergaderstukken zijn gepubliceerd op:<br><a href="https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken">Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)</a></p></section></section>
+<section data-format="markdown" id="implementatieondersteuning"><h2 id="x5-implementatieondersteuning"><bdi class="secno">5. </bdi>Implementatieondersteuning<a class="self-link" href="#implementatieondersteuning" aria-label="Permalink for Section 5."></a></h2><section id="opleiding-en-advies"><h3 id="x5-1-opleiding-en-advies"><bdi class="secno">5.1 </bdi>Opleiding en advies<a class="self-link" href="#opleiding-en-advies" aria-label="Permalink for Section 5.1"></a></h3><p>Logius biedt momenteel geen opleiding aan, maar borgt dat de informatie m.b.t. de standaard altijd, zonder drempels, toegankelijk is. Bovendien kunnen geïnteresseerden via verschillende kanalen contact opnemen met Logius in geval van vragen of opmerkingen. Zie hiervoor 5.2 Helpdesk.<br>Aanvullend organiseert Kennisplatform API's regelmatig overleggen en seminars m.b.t. de Nederlandse API Strategie waar de ADR-standaard een onderdeel van is. Zie hiervoor <a href="http://www.apigov.nl/">www.apigov.nl</a>.</p></section><section id="helpdesk"><h3 id="x5-2-helpdesk"><bdi class="secno">5.2 </bdi>Helpdesk<a class="self-link" href="#helpdesk" aria-label="Permalink for Section 5.2"></a></h3><p>Logius biedt ondersteuning en advies via verschillende kanalen:</p><ul>
 <li>Online: als reactie op issue's in de Github van het Kennisplatform:<br>
 <a href="https://github.com/Geonovum/KP-APIs/issues">Issues · Geonovum/KP-APIs (github.com)</a></li>
 <li>Per mail: <a href="mailto:api@logius.nl">api@logius.nl</a></li>
 <li>Telefonisch: 0900 - 555 45 55</li>
 <li>Per post: Logius, Postbus 96810; 2509 JE Den Haag, (t.a.v. CvS).</li>
-</ul></section><section id="validatie-certificatie"><h3 id="x5-3-validatie-certificatie"><bdi class="secno">5.3 </bdi>Validatie &amp; Certificatie<a class="self-link" aria-label="§" href="#validatie-certificatie"></a></h3><p>Certificatie van API's is op dit moment niet mogelijk. Wel is het mogelijk API's te valideren en te testen met behulp van de door VNG gerealiseerde tools welke beschikbaar zijn op:</p><ul>
+</ul></section><section id="validatie-certificatie"><h3 id="x5-3-validatie-certificatie"><bdi class="secno">5.3 </bdi>Validatie &amp; Certificatie<a class="self-link" href="#validatie-certificatie" aria-label="Permalink for Section 5.3"></a></h3><p>Certificatie van API's is op dit moment niet mogelijk. Wel is het mogelijk API's te valideren en te testen met behulp van de door VNG gerealiseerde tools welke beschikbaar zijn op:  </p><ul>
 <li><p><a href="https://developer.overheid.nl/">Developer.overheid.nl</a> &amp;</p>
 </li>
-<li><p><a href="https://api-test.nl/">API-test.nl</a>  </p>
+<li><p><a href="https://api-test.nl/">API-test.nl</a></p>
 </li>
-</ul><p>Na validatie met de API-test tool is het mogelijk een badge te genereren waarmee aangetoond wordt dat de API voldoet aan alle test voorwaarden.</p></section></section><section data-format="markdown" id="communicatie"><h2 id="x6-communicatie"><bdi class="secno">6. </bdi>Communicatie<a class="self-link" aria-label="§" href="#communicatie"></a></h2><section id="promotie"><h3 id="x6-1-promotie"><bdi class="secno">6.1 </bdi>Promotie<a class="self-link" aria-label="§" href="#promotie"></a></h3><p>De ADR-standaard wordt via verschillende kanalen gepromoot. Ten eerste via het Kennisplatform API's als onderdeel van de Nederlandse API-strategie. Naast communicatie op de website van het kennisplatform, organiseert het platform regelmatig vrij toegankelijke bijeenkomsten.<br>Daarnaast heeft de standaard de zogenaamde 'pas toe of leg uit' -status van Forum Standaardisatie. Dit betekent dat Forum Standaardisatie het gebruik van deze standaard niet alleen actief promoot, maar in veel gevallen zelfs hard voorschrijft.<br>Tot slot is Logius promotor van de standaard. Zowel intern voor de toepassing van de standaard in Logius voorzieningen als extern, door andere partijen te informeren en adviseren over de mogelijkheden van de standaard.</p></section><section id="publicatie"><h3 id="x6-2-publicatie"><bdi class="secno">6.2 </bdi>Publicatie<a class="self-link" aria-label="§" href="#publicatie"></a></h3><p>Als een nieuwe versie van de ADR-standaard de status "In Gebruik" heeft, worden verschillende zaken gepubliceerd.<br>Logius publiceert altijd de volledige specificatie van de standaard op een deel van zijn website. Daarnaast wordt een persbericht uitgegeven, waarin de publicatie van de nieuwe release van de standaard wordt aangekondigd.<br>Aanvullend publiceert Logius alle genoemde documentatie zoals genoemd bij 4.5.</p></section><section id="klachtenafhandeling"><h3 id="x6-3-klachtenafhandeling"><bdi class="secno">6.3 </bdi>Klachtenafhandeling<a class="self-link" aria-label="§" href="#klachtenafhandeling"></a></h3><p>Klachten over de opzet of de uitvoering van het beheerproces kunnen ingediend worden bij Logius. Dit kan in principe via alle beschikbare kanalen. De indiener van de klacht krijgt zo spoedig mogelijk en altijd terugkoppeling over de voortgang van en beslissing over zijn klacht.<br>De volledige klachtenprocedure is terug te vinden in het generieke beheermodel van Logius, afdeling standaarden. (volgt)</p></section></section>
+</ul><p>Na validatie met de API-test tool is het mogelijk een badge te genereren waarmee aangetoond wordt dat de API voldoet aan alle test voorwaarden.</p></section></section>
+<section data-format="markdown" id="communicatie"><h2 id="x6-communicatie"><bdi class="secno">6. </bdi>Communicatie<a class="self-link" href="#communicatie" aria-label="Permalink for Section 6."></a></h2><section id="promotie"><h3 id="x6-1-promotie"><bdi class="secno">6.1 </bdi>Promotie<a class="self-link" href="#promotie" aria-label="Permalink for Section 6.1"></a></h3><p>De ADR-standaard wordt via verschillende kanalen gepromoot. Ten eerste via het Kennisplatform API's als onderdeel van de Nederlandse API-strategie. Naast communicatie op de website van het kennisplatform, organiseert het platform regelmatig vrij toegankelijke bijeenkomsten.<br>Daarnaast heeft de standaard de zogenaamde 'pas toe of leg uit' -status van Forum Standaardisatie. Dit betekent dat Forum Standaardisatie het gebruik van deze standaard niet alleen actief promoot, maar in veel gevallen zelfs hard voorschrijft.<br>Tot slot is Logius promotor van de standaard. Zowel intern voor de toepassing van de standaard in Logius voorzieningen als extern, door andere partijen te informeren en adviseren over de mogelijkheden van de standaard.</p></section><section id="publicatie"><h3 id="x6-2-publicatie"><bdi class="secno">6.2 </bdi>Publicatie<a class="self-link" href="#publicatie" aria-label="Permalink for Section 6.2"></a></h3><p>Als een nieuwe versie van de ADR-standaard de status "In Gebruik" heeft, worden verschillende zaken gepubliceerd.<br>Logius publiceert altijd de volledige specificatie van de standaard op een deel van zijn website. Daarnaast wordt een persbericht uitgegeven, waarin de publicatie van de nieuwe release van de standaard wordt aangekondigd.<br>Aanvullend publiceert Logius alle genoemde documentatie zoals genoemd bij [Documentatie](# Documentatie).</p></section><section id="klachtenafhandeling"><h3 id="x6-3-klachtenafhandeling"><bdi class="secno">6.3 </bdi>Klachtenafhandeling<a class="self-link" href="#klachtenafhandeling" aria-label="Permalink for Section 6.3"></a></h3><p>Klachten over de opzet of de uitvoering van het beheerproces kunnen ingediend worden bij Logius. Dit kan in principe via alle beschikbare kanalen. De indiener van de klacht krijgt zo spoedig mogelijk en altijd terugkoppeling over de voortgang van en beslissing over zijn klacht.<br>De volledige klachtenprocedure is terug te vinden in het generieke beheermodel van Logius, afdeling standaarden. (volgt)</p></section></section>
   
 
 <p role="navigation" id="back-to-top">
@@ -551,28 +491,39 @@ Het Nut en de werking van de standaard zijn reeds goed beschreven door het Forum
   </p><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
-  document.respec.ready.then(dfnPanel);
+  document.respec.ready.then(setupPanel);
 } else {
-  dfnPanel();
+  setupPanel();
 }
 
-function dfnPanel() {
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
   /** @type {HTMLElement} */
-  let panel;
-  document.body.addEventListener("click", event => {
-    if (!(event.target instanceof HTMLElement)) return;
+  let panel = null;
+  return event => {
+    const { target, type } = event;
 
-    /** @type {HTMLElement} */
-    const el = event.target;
+    if (!(target instanceof HTMLElement)) return;
 
-    const action = deriveAction(el);
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
     switch (action) {
       case "show": {
-        if (panel) hidePanel(panel);
+        hidePanel(panel);
         /** @type {HTMLElement} */
-        const dfn = el.closest("dfn, .index-term");
+        const dfn = target.closest("dfn, .index-term");
         panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
-        displayPanel(dfn, panel, { x: event.clientX, y: event.clientY });
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
         break;
       }
       case "dock": {
@@ -583,30 +534,59 @@ function dfnPanel() {
       }
       case "hide": {
         hidePanel(panel);
+        panel = null;
         break;
       }
     }
-  });
+  };
 }
 
-/** @param {HTMLElement} clickTarget */
-function deriveAction(clickTarget) {
-  const hitALink = !!clickTarget.closest("a");
-  if (clickTarget.closest("dfn, .index-term")) {
-    return hitALink ? null : "show";
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
   }
-  if (clickTarget.closest(".dfn-panel")) {
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
     if (hitALink) {
-      const clickedSelfLink = clickTarget.classList.contains("self-link");
-      return clickedSelfLink ? "hide" : "dock";
+      return target.classList.contains("self-link") ? "hide" : "dock";
     }
-    const panel = clickTarget.closest(".dfn-panel");
-    return panel.classList.contains("docked") ? "hide" : null;
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
   }
   if (document.querySelector(".dfn-panel:not([hidden])")) {
     return "hide";
   }
-  return null;
+  return "none";
 }
 
 /**
@@ -648,11 +628,86 @@ function displayPanel(dfn, panel, { x, y }) {
     const caret = panel.querySelector(".caret");
     caret.style.left = `${newCaretOffset}px`;
   }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
 }
 
 /** @param {HTMLElement} panel */
 function hidePanel(panel) {
+  if (!panel) return;
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script></body></html>
+})()</script><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
