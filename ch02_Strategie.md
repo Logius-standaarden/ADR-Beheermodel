@@ -34,7 +34,7 @@ In tabelvorm:
 |**OBDO** <br> (Strategisch besluitvormend, 2x per jaar)|Bestuurlijk besluit|Samen met andere bestuurders: <br>1. Vaststellen major releases van de standaard. <br>2.Vaststellen beheermodel van de standaard. <br>3. Vaststellen externe publicaties over het standaardenbeleid en releases.|1.Begeleiding van de Adviesraad en inbreng via secretariaat OBDO. <br>2. Publiceren standaarden en andere Standaard-informatie.|
 > Figuur 3. Overheidsbreed Beleidsoverleg Digitale Overheid
 
-### Besluitvorming 
+### Besluitvorming  
 
 In alle overleggremia vindt besluitvorming plaats op basis van consensus. Mocht consensus niet mogelijk zijn, dan gaat het vraagstuk met een weergave van de verschillende standpunten door naar het eerstvolgend-hoger gelegen-gremium. Indien in het hoogste gremium (het OBDO) geen consensus bereikt kan worden, heeft de voorzitter van het OBDO (min. BZK) de beslissende stem.  
 
@@ -52,9 +52,9 @@ Uitbreidingen en aanpassingen in de ADR-standaard komen tot stand door participa
 *Ad 3) Het OBDO kent een vaste vertegenwoordiging. [Zie voor meer informatie de governance van Digitaleoverheid.nl](https://www.digitaleoverheid.nl/governance-digitale-overheid/).*  
 *Ad 4) Aangezien het overleg van de Technische Architectuur Groep (het Technisch Overleg) het eerste besluitvormende gremium is van de standaard, en besluitvorming in dit gremium plaatsvindt op basis van consensus, stelt Logius een aantal voorwaarden aan deelname:*  
 
-   1.	Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.
-   2.	De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.
-   3.	Het belang van de Nederlandse overheid dient voldoende geborgd te zijn in het technisch overleg.
+   1. Leden van het technisch overleg dienen een aantoonbaar belang te hebben bij de standaard.
+   2. De omvang en samenstelling moet een goede vertegenwoordiging bevatten van de verschillende belangen rond de standaard. We gaan uit van 1 deelnemer per organisatie.
+   3. Het belang van de Nederlandse overheid dient voldoende geborgd te zijn in het technisch overleg.
 
 Personen/partijen die willen deelnemen aan het technisch overleg kunnen een mail sturen aan api@logius.nl, waarin zij aangeven wat hun belang is bij de standaard. Met inachtneming van bovenstaande punten, beoordeeld Logius de aanvraag.
 

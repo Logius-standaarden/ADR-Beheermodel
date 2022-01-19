@@ -10,7 +10,7 @@ Tot slot is Logius promotor van de standaard. Zowel intern voor de toepassing va
 
 Als een nieuwe versie van de ADR-standaard de status "In Gebruik" heeft, worden verschillende zaken gepubliceerd.  
 Logius publiceert altijd de volledige specificatie van de standaard op een deel van zijn website. Daarnaast wordt een persbericht uitgegeven, waarin de publicatie van de nieuwe release van de standaard wordt aangekondigd.  
-Aanvullend publiceert Logius alle genoemde documentatie zoals genoemd bij [Documentatie](# Documentatie).
+Aanvullend publiceert Logius alle genoemde documentatie zoals genoemd bij [Documentatie](#documentatie).
 
 ## Klachtenafhandeling
 

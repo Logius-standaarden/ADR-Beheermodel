@@ -2,7 +2,7 @@
 
 ## Community
 
-De ADR community/ Interesse Groep bestaat uit eenieder die belanghebbende of belangstellende is m.b.t. de standaard. Deelname aan de community kent geen drempels of restricties. Leden van de community kunnen alle informatie m.b.t. de standaard en het beheer daarvan inzien via de website en via verschillende kanalen issues of RFC&#39;s melden. Daarnaast kunnen community leden reageren op openbare consultaties en onder bepaalde voorwaarden deelnemen aan de Technische Architectuur Groep (zie paragraaf [deelname](#Deelname)).
+De ADR community/ Interesse Groep bestaat uit eenieder die belanghebbende of belangstellende is m.b.t. de standaard. Deelname aan de community kent geen drempels of restricties. Leden van de community kunnen alle informatie m.b.t. de standaard en het beheer daarvan inzien via de website en via verschillende kanalen issues of RFC&#39;s melden. Daarnaast kunnen community leden reageren op openbare consultaties en onder bepaalde voorwaarden deelnemen aan de Technische Architectuur Groep (zie paragraaf [deelname](#deelname)).
 
 ## Architectuur
 
@@ -59,7 +59,7 @@ Uitgesloten van alle bovenstaande zijn rechten verbonden aan de standaarden, pro
 
 ## Kwaliteitsbeleid en benchmarking  
 
-Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook de paragraaf [Bomos](#Bomos) en [Governance](#Governance)) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.
+Zoals gezegd wordt het beheer van de ADR-standaard volledig open ingevuld (zie ook de paragraaf [Bomos](#bomos) en [Governance](#governance)) Dit borgt dat zoveel mogelijk belangstellenden en belanghebbenden betrokken zijn bij wijzigingen en besluitvorming die wijzigingen.
 
 ## Adoptie en erkenning  
 

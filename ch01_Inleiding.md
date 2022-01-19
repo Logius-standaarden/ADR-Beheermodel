@@ -29,13 +29,13 @@ De actuele versie van de ADR-standaard is 1.0. Deze versie is op 09-07-2020 door
 De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt kort gezegd in dat Nederlandse overheden en instellingen uit de (semi) publieke sector verplicht zijn deze standaard toe te passen op het moment dat zij REST API’s gaan gebruiken voor het ontsluiten van overheidsinformatie en/of functionaliteit. (Zie voor meer informatie over het [pas toe of leg uit beleid.](https://www.forumstandaardisatie.nl/node/229))  
 
 - De verplichting is gepubliceerd door het Forum Standaardisatie op:  
-(https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)  
+  - [forumstandaardisatie.nl/open-standaarden/rest-api-design-rules](https://www.forumstandaardisatie.nl/open-standaarden/rest-api-design-rules)  
 - Versie 1.0 van de ADR is gepubliceerd op:  
-(https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)  
+  - [publicatie.centrumvoorstandaarden.nl/api/adr/1.0](https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)  
 - De laatste versie van de ADR is gepubliceerd op:  
-(https://publicatie.centrumvoorstandaarden.nl/api/adr/)  
+  - [publicatie.centrumvoorstandaarden.nl/api/adr/](https://publicatie.centrumvoorstandaarden.nl/api/adr/)  
 - De laatste concept versie van de standard is gepubliceerd op:  
-(https://logius-standaarden.github.io/API-Design-Rules/) 
+  - [logius-standaarden.github.io/API-Design-Rules/](https://logius-standaarden.github.io/API-Design-Rules/)  
 
 ## Bomos
 
@@ -44,14 +44,15 @@ Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor O
 ![Bomos model](media/Bomos_model_v2.svg "Bomos model")
 > Figuur 1. Bomos model
 
-Voor meer informatie over BOMOS zie ook [de beslisboom van het forumstandaardisatie](https://beslisboom.forumstandaardisatie.nl/thema/ontwikkelen-en-beheren-van-open-standaarden).  
+VVoor meer informatie over BOMOS zie ook de ['Publicatie-BOMOS-2i.pdf'](https://www.forumstandaardisatie.nl/sites/default/files/BFS/4-basisinformatie/publicaties/Publicatie-BOMOS-2i.pdf) van het Forum standaardisatie.  
+
 BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan bevinden. Deze fase bepaalt mede op welke beheeronderdelen meer of minder wordt ingezet. De verschillende fases zijn:  
 
-1.	Creatie/ontwikkeling
-2.	Introductie
-3.	Implementatie/groei
-4.	Volwaardige toepassing
-5.	Uitfaseren
+1. Creatie/ontwikkeling
+2. Introductie
+3. Implementatie/groei
+4. Volwaardige toepassing
+5. Uitfaseren
 
 ![Bomos_levenscyclus](media/Bomos_levenscyclus_v2.svg "Bomos levenscyclus")
 > Figuur 2. Bomos levenscyclus
@@ -60,10 +61,10 @@ De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie v
 
 Dit heeft gevolgen voor het beheer van de standaard. Naast de groei in de aantallen toepassingen van de standaard is ook relevant dat eerst nog minor en major wijzigingen in de standaard op een correcte manier worden doorgevoerd en er veel informatie beschikbaar is die gebruikers helpt bij de implementatie van de standaard. Daarom is er komende tijd vooral aandacht voor:
 
--	Het in de praktijk bestendigen van het beheer van de standaard;  
--	Gestaag doorontwikkeling van de specificaties zelf;  
--	Bouwen en aanbieden ondersteunende tooling;  
--	Groei in het aantal toepassingen van de standaard;  
--	Monitoring van het gebruik van de standaard;  
--	Groei van de community rond de standaard.  
+- Het in de praktijk bestendigen van het beheer van de standaard;  
+- Gestaag doorontwikkeling van de specificaties zelf;  
+- Bouwen en aanbieden ondersteunende tooling;  
+- Groei in het aantal toepassingen van de standaard;  
+- Monitoring van het gebruik van de standaard;  
+- Groei van de community rond de standaard.  
 

@@ -61,18 +61,14 @@ Alle documenten m.b.t. de standaard en het beheer van de standaard worden openba
 - De specificaties van de standaard
 - De voorlopige specificaties van de nieuwe versie van de standaard.
 
-Versie 1.0 van de ADR is gepubliceerd op:  
-[https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0](https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)  
-
-De laatste versie van de ADR is gepubliceerd op:  
-[https://publicatie.centrumvoorstandaarden.nl/api/adr/](https://publicatie.centrumvoorstandaarden.nl/api/adr/)  
-
-De laatste concept versie van de standard is gepubliceerd op:  
-[https://logius-standaarden.github.io/API-Design-Rules/](https://logius-standaarden.github.io/API-Design-Rules/)  
-
-Het beheermodel is gepubliceerd op:  
-[Logius-standaarden/ADR-Beheermodel (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel)  
-
-De vergaderstukken zijn gepubliceerd op:  
-[Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel/vergaderstukken)  
+- Versie 1.0 van de ADR is gepubliceerd op:  
+  - [https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0](https://publicatie.centrumvoorstandaarden.nl/api/adr/1.0)  
+- De laatste versie van de ADR is gepubliceerd op:  
+  - [https://publicatie.centrumvoorstandaarden.nl/api/adr/](https://publicatie.centrumvoorstandaarden.nl/api/adr/)  
+- De laatste concept versie van de standard is gepubliceerd op:  
+  - [https://logius-standaarden.github.io/API-Design-Rules/](https://logius-standaarden.github.io/API-Design-Rules/)  
+- Het beheermodel is gepubliceerd op:  
+  - [Logius-standaarden/ADR-Beheermodel (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel)  
+- De vergaderstukken zijn gepubliceerd op:  
+  - [Logius-standaarden/ADR-Beheermodel/vergaderstukken (github.com)](https://github.com/Logius-standaarden/ADR-Beheermodel/tree/develop/vergaderstukken)  
 
