@@ -42,7 +42,6 @@ De status van de ADR-standaard is ‘Verplicht (pas toe leg uit)’. Dit houdt k
 Logius richt de beheerorganisatie in conform het Beheer en OntwikkelModel voor Open Standaarden (BOMOS). Ook het beheer van de ADR-standaard is op basis van BOMOS ingericht. Voor de beheerorganisatie heeft Logius een generiek beheermodel opgezet, waar het beheerplan van de ADR-standaard is afgeleid.  
 
 ![Bomos model](media/Bomos_model_v2.svg "Bomos model")
-> Figuur 1. Bomos model
 
 VVoor meer informatie over BOMOS zie ook de ['Publicatie-BOMOS-2i.pdf'](https://www.forumstandaardisatie.nl/sites/default/files/BFS/4-basisinformatie/publicaties/Publicatie-BOMOS-2i.pdf) van het Forum standaardisatie.  
 
@@ -55,7 +54,6 @@ BOMOS onderscheidt verschillende levenscyclusfases waarin een standaard zich kan
 5. Uitfaseren
 
 ![Bomos_levenscyclus](media/Bomos_levenscyclus_v2.svg "Bomos levenscyclus")
-> Figuur 2. Bomos levenscyclus
 
 De ADR-standaard bevindt zich in de implementatie/groei fase. De eerste versie van de standaard is 15-10-2019 aangemeld bij het Forum Standaardisatie en op 09-07-2020 op de lijst van verplichte standaarden opgenomen. Vanuit het Kennisplatform API’s en Logius Centrum voor Standaarden wordt momenteel nog volop aan de API Design Rules gewerkt en de verwachting is dat de standaard nog de nodige ontwikkelingen door gaat maken. Daarnaast komt het gebruik van de API Design Rules pas net op stoom, waardoor er van een volwaardige toepassing bij de beoogde doelgroep nog geen sprake is.  
 

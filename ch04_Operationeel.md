@@ -19,7 +19,6 @@ Om te voorkomen dat er verschillende lijsten met issues en verzoeken ontstaan, i
 Dit houdt concreet in dat RFC&#39;s die rechtstreeks bij Logius worden neergelegd, door Logius worden doorgespeeld aan de werkgroep ADR zodat daar de eerste beoordeling kan plaatsvinden.
 
 ![ADR RFC Procesmodel](media/ADR_Governance-RFC_Process.svg "ADR RFC Procesmodel")
-> Figuur 5. ADR RFC Procesmodel
 
 ## Uitvoering en ontwikkeling (Wijzigingsproces)
 
@@ -37,20 +36,17 @@ De procedure van RCF naar daadwerkelijke wijziging ziet er als volgt uit:
 Dit is schematisch weergegeven in het onderstaande ADR Governance model:  
 
 ![ADR Governance model](media/ADR_Governance_model.svg "ADR Governance model")
-> Figuur 6. ADR Governance model
 
 ## Status van de standaard
 
 Logius, Centrum voor standaarden onderscheid vier statussen die de ADR-standaard kan hebben:
 
-| **Afkorting** | **Status van de standaard** | **Beschrijving van de status**                                      |
-| :------------: | :----------------------------- | :-------------------------------------------------------------------  |
-| IO             | In Ontwikkeling                | Een nieuwe release van de standaard is &quot;In Ontwikkeling&quot; wanneer er met medeweten en medewerking van participanten aan gewerkt wordt en wanneer dit onderdeel of deze release nog niet voor de buitenwereld is gepubliceerd.                                                   |
-| IG             | In Gebruik                     | Als een nieuwe release van de standaard gereed is, en is bestendigd door Forum Standaardisatie, stelt het Technisch Overleg de status &#39;In Gebruik&#39; vast. Door deze vaststelling worden gebruikers en ICT-leveranciers opgeroepen deze nieuwe release op te nemen in software en in gebruik te nemen.                              |
-| EO             | Einde Ondersteuning            | De standaardversie met de status &quot;Einde ondersteuning&quot; wordt niet meer ondersteund door de beheerder.<br>De kennis en informatie voor vragen en support is bij de beheerder niet langer beschikbaar.                                                                       |
-| TG             | Teruggetrokken                 | De standaard krijgt de status &quot;Teruggetrokken&quot; indien een release van de standaard niet bruikbaar blijkt (bijv. vanwege implementatieproblemen).                                                             |
-
-> Figuur 7. Mogelijke statussen van de standaard
+| Afkorting | Status van de standaard | Beschrijving van de status                                                                                                                                                                                                                                                                           |
+|-----------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IO        | In Ontwikkeling         | Een nieuwe release van de standaard is "In Ontwikkeling" wanneer er met medeweten en medewerking van participanten aan gewerkt wordt en wanneer dit onderdeel of deze release nog niet voor de buitenwereld is gepubliceerd.                                                                         |
+| IG        | In Gebruik              | Als een nieuwe release van de standaard gereed is, en is bestendigd door Forum Standaardisatie, stelt het Technisch Overleg de status 'In Gebruik' vast. Door deze vaststelling worden gebruikers en ICT-leveranciers opgeroepen deze nieuwe release op te nemen in software en in gebruik te nemen. |
+| EO        | Einde Ondersteuning     | De standaardversie met de status "Einde ondersteuning" wordt niet meer ondersteund door de beheerder. De kennis en informatie voor vragen en support is bij de beheerder niet langer beschikbaar.                                                                                                    |
+| TG        | Teruggetrokken          | De standaard krijgt de status "Teruggetrokken" indien een release van de standaard niet bruikbaar blijkt (bijv. vanwege implementatieproblemen).                                                                                                                                                     |
 
 ## Documentatie
 

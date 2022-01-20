@@ -26,13 +26,12 @@ Dit is het hoogst ambtelijke gremium dat besluit over major releases van de stan
 
 In tabelvorm:  
 
-|**Gremium**|**Accent**|**Rol participant**|**Ondersteuning door beheerder (Logius)**|
+|Gremium|Accent|Rol participant|Ondersteuning door beheerder (Logius)|
 |---|---|---|---|
 |**API Community** <br> (omvang onbeperkt)|Inhoud – delen|Samen met alle leden van de Interesse Groep (IG):  <br>1. Volgen van ontwikkelingen.  <br>2. Leveren van input voor de doorontwikkeling van de standaard.|1. Informatie m.b.t. specificaties en beheer open delen met community.  <br>2. Deelnemen aan  stuurgroep en werkgroepen van Kennisplatform API’s.| 
 |**API Technisch Overleg** <br>(Operationeel, 4x per jaar)|Inhoud - afstemmen| Samen met andere experts van de Technische Architectuur Groep (TAG):  <br>1. Inhoudelijk ontwikkelen van standaard onderdelen en bijbehorende documentatie.  <br>2. Voorbereiden van de release-planning.  <br>3. Prioriteiten stellen voor de ontwikkeling, roadmap van nieuwe releases van de standaarden.  <br>4. Goedkeuring van aanpassingen op de standaard.  |1. Analyseren, ontwerpen en uitwerken van specificaties.  <br>2. Volgen en beïnvloeden van aanpalende standaarden.  <br>3. Organiseren bijeenkomsten.  <br>4. Opstellen en verspreiden notulen. <br>5. Beschikbaar stellen specificaties.|
 |**Tactisch/Strategisch** <br>(4x per jaar)|Prioritering proces en uitwerken strategisch advies|Samen met andere participanten:<br>1. Vaststellen roadmap van de standaard. <br>2. Voorportaal OBDO. <br>3. Vaststellen minor releases van de standaard.|1. Analyseren, ontwerpen en uitwerken van beleidszaken, (release)planning.|  
 |**OBDO** <br> (Strategisch besluitvormend, 2x per jaar)|Bestuurlijk besluit|Samen met andere bestuurders: <br>1. Vaststellen major releases van de standaard. <br>2.Vaststellen beheermodel van de standaard. <br>3. Vaststellen externe publicaties over het standaardenbeleid en releases.|1.Begeleiding van de Adviesraad en inbreng via secretariaat OBDO. <br>2. Publiceren standaarden en andere Standaard-informatie.|
-> Figuur 3. Overheidsbreed Beleidsoverleg Digitale Overheid
 
 ### Besluitvorming  
 
