@@ -23,13 +23,13 @@ Agenda en Verslag van de Werkgroep API Design Rules (dit omvat ook het Technisch
 
 3. Besluitvorming en producten van de subwerkgroepen:
 
-  > - [Profielen en capabilities](https://github.com/Geonovum/KP-APIs/blob/c0d634d0fc32e5ad903ba8951bf2e22c562703b4/Werkgroep API design rules/profielen.md) (trekker Jasper Roes)
+  > - [Profielen en capabilities](https://github.com/Geonovum/KP-APIs/blob/master/Werkgroep%20API%20design%20rules/profielen.md) (trekker Jasper Roes)
   >   - Tbd
-  > - [Tijdreizen](https://github.com/Geonovum/KP-APIs/blob/c0d634d0fc32e5ad903ba8951bf2e22c562703b4/Werkgroep API design rules/tijdreizen.md) (trekker Tony Sloos) - uitwerking combineren met DIS Geo / SOR sessies en daarna extensie updaten
+  > - [Tijdreizen](https://github.com/Geonovum/KP-APIs/blob/master/Werkgroep%20API%20design%20rules/tijdreizen.md) (trekker Tony Sloos) - uitwerking combineren met DIS Geo / SOR sessies en daarna extensie updaten
   >   - Tbd
-  > - [Omgaan met relaties](https://github.com/Geonovum/KP-APIs/blob/c0d634d0fc32e5ad903ba8951bf2e22c562703b4/Werkgroep API design rules/relaties.md) (voormalig put/patch/post/delete) (trekker Henri Korver)
+  > - [Omgaan met relaties](https://github.com/Geonovum/KP-APIs/blob/master/Werkgroep%20API%20design%20rules/relaties.md) (voormalig put/patch/post/delete) (trekker Henri Korver)
   >   - Tbd
-  > - [Geo](https://github.com/Geonovum/KP-APIs/blob/c0d634d0fc32e5ad903ba8951bf2e22c562703b4/Werkgroep API design rules/geo.md) (trekker Linda van den Brink)
+  > - [Geo](https://github.com/Geonovum/KP-APIs/blob/master/Werkgroep%20API%20design%20rules/geo.md) (trekker Linda van den Brink)
   >   - Tbd 
   > - [Normatieve Rules](https://github.com/Logius-standaarden/API-Design-Rules) (trekker Martin van der Plas)
   >   - Feature: Uitwerking Semantic versioning voor het Normatieve deel (Martin van der Plas)
@@ -41,7 +41,7 @@ Agenda en Verslag van de Werkgroep API Design Rules (dit omvat ook het Technisch
 * NB: Profielen en capabilities betreft de stuctuur wijziging "van extensies naar een modulaire opbouw van de NL API Design Rules"
 
 4. eerdere oproepen:
-   1. Oproep aan de werkgroep: geef commentaar bij de issue's uit de openbare consultatie [Lijst issue's gefilterd](https://github.com/Geonovum/KP-APIs/issues?q=is%3Aopen+is%3Aissue+label%3A%22API+design+rules+%28normatief%29%22+label%3AConsultatie)
+   1. Oproep aan de werkgroep: geef commentaar bij de issue's uit de openbare consultatie [Lijst issue's gefilterd](https://github.com/Geonovum/KP-APIs/issues?q=is%3Aopen+is%3Aissue+label%3AConsultatie)
    2. er wordt opgeroepen na te gaan welke rules men normatief op wil nemen.  
 
 
