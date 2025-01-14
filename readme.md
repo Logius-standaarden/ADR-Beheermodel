@@ -1,3 +1,3 @@
 # ADR-Beheermodel
 
-This folder holds concept information and documents related to the Governance of the API Design Rules Standard.
+Dit beheermodel is verouderd en vervangen door het [algemene API Standaarden beheermodel](https://github.com/Logius-standaarden/API-Standaarden-Beheermodel)
